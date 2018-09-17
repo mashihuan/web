@@ -1,0 +1,37 @@
+/*margin,padding的样式初始化*/
+body,ul,ol,li,img,form,fieldset,textarea,table,td,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dt,dd,table,input,textarea {
+	margin: 0; 
+	padding: 0;
+}
+img {
+    border: none;
+}
+/*列表的样式初始化*/
+li {
+	list-style: none;
+}
+/*font-style的初始化*/
+em {
+	font-style: normal;
+}
+/*text-decoration的初始化*/
+a {
+	text-decoration: none;
+}
+/*input标签初始化*/
+input,select,textarea {
+	/*outline: none;*/
+	/*border: 0;*/
+}
+textarea {
+	resize: none;
+}
+/*bfc方法*/
+.clear:after {
+	content: " "; 
+	display: block;
+	clear: both;
+}
+.clear {
+	zoom: 1;
+}

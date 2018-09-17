@@ -1,0 +1,273 @@
+/*公用*/
+.clear:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+/*step*/
+.step {
+	width: 990px;
+	height: 48px;
+	margin: 0 auto;
+	text-align: center;
+	border-bottom: 2px solid #ccc;
+}
+.step ul {
+	width: 760px;
+	margin: 0 auto;
+}
+.step ul li {
+    float: left;
+    width: 148px;
+    height: 48px;
+    line-height: 48px;
+    padding: 0 20px;
+}
+.step ul li em {
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background: #999;
+	color: #fff;
+	border-radius: 50%;
+	vertical-align: middle;
+	line-height: 24px;
+}
+.step ul .active {
+	border-bottom: 2px solid red;
+}  
+.step ul .active em {
+	background: red;
+}
+.formBox {
+	width: 990px;
+	padding-top: 40px;
+	margin: 0 auto;
+}
+.form {
+	width: 670px;
+	line-height: 37px;
+	margin: 0 auto;
+	font-size: ;
+}
+.form label {
+	width: 200px;
+	height: 37px;
+	margin-right: 20px;
+	text-align: right;
+	color: #999;
+	display: inline-block;
+	float: left;
+}
+.form select,.form input {
+    width: 160px;
+    height: 37px;
+    box-sizing: border-box;
+    padding: 0 5px;
+    float: left;
+}
+.yz {
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.slideBox {
+	position: relative;
+	width: 300px;
+	height: 32px;
+	float: left;
+	color: #999;
+	text-align: center;
+	font-size: 12px;
+	background-color: #ddd;
+	line-height: 32px;
+}
+.slide {
+	position: absolute;
+	left: 0;
+	top: -1px;
+	width: 42px;
+	height: 32px;
+	background: #fff;
+	border: 1px solid #ccc;
+	cursor: move;
+}
+.next_btn {
+	width: 180px;
+	height: 34px;
+	background-color: #ddd;
+	display: inline-block;
+	text-align: center;
+	line-height: 34px;
+	color: #fff;
+}
+.next_btn:hover  {
+    opacity: .6;
+}
+.cursor {
+	position: absolute;
+	top: 5px;
+	left: 90px;
+	width: 5px;
+	height: 20px;
+	background: #fff;
+	opacity: 0;
+	
+}
+.slide_bg {
+	position: absolute;
+	opacity: .6;
+	z-index: 2;
+	height: 32px;
+	background-color: #7ac23c;
+}
+.success {
+	display: none;
+	color: #fff;
+}
+/*protocol*/
+body {
+	position: relative;
+}
+.protocol {
+	position: absolute;
+	top: 105px;
+	left: 300px;
+	z-index: 10;
+	width: 680px;
+	height: 390px;
+	padding: 20px;
+	border: 1px solid #ccc;
+	border-top: 2px solid red;
+	background: #fff;
+}
+.protocol_tit a {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: url(../img/logo/cha.png) no-repeat;
+    background-size: 20px 20px;
+}
+.protocol_tit h3 {
+	color: #3e3e3e;
+	font-size: 16px;
+}
+.protocol_content {
+	font-size: 12px;
+	color: #999;
+	line-height: 18px;
+}
+.protocol_content p,.protocol_content li {
+	margin-top: 8px;
+}
+.gray_bg {
+	background: gray;
+}
+.protocol_content strong {
+    text-decoration: underline;
+    color: #333;
+}
+.protocol_content a {
+	font-size: 16px;
+	color: red;
+}
+.protocol_content a:hover {
+	border-bottom: 1px solid red;
+}
+.agree_p {
+	text-align: center;
+}
+.agree_p a:hover {
+	border-bottom: none;
+	opacity: .8;
+}
+.protocol_content .agree {
+	background: red;
+	color: white;
+	padding: 0 20px;
+	height: 36px;
+	line-height: 36px;
+	width: 140px;
+	border-radius: 3px;
+	text-align: center;
+	display: inline-block;
+}
+/*小蜜*/
+.xiaomi {
+	position: absolute;
+	left: 950px;
+	top: 300px;
+	z-index: 12;
+	width: 150px;
+	height: 370px;
+	background-color: #fff;
+}
+.xiaomi_tit {
+	cursor: move;
+}
+.xiaomi_tit p {
+	width: 150px;
+	height: 26px;
+	background-color: orange;
+	padding: 11px 0 5px 0;
+	color: #fff;
+	font-size: 12px;
+	text-align: center;
+	border-radius: 3px 3px 0 0 ;
+}
+.xiaomi_tit p span {
+	font-size: 16px;
+}
+.xiaomi_content {
+	font-size: 12px;
+	height: 0;
+	overflow: hidden;
+	transition: 2s;
+	/*position: absolute;*/
+}
+.xiaomi_content a {
+	color: #333;
+}
+.xiaomi_content li {
+	line-height: 24px;
+	max-height: 46px;
+	padding: 3px 10px;
+	overflow: hidden;
+	border-bottom: 1px solid #ccc;
+}
+.consult {
+	text-align: center;
+	margin-top: 15px;
+}
+.consult a {
+	color: red;
+}
+.consult i {
+	position: relative;
+	top: 1px;
+	display: inline-block;
+	width: 15px;
+	height: 15px;
+	background: url(../img/logo/message.png) no-repeat;
+	background-size: 100% 100%;
+	margin-left: 5px;
+}
+.small {
+	display: inline-block;
+	position: relative;
+	top: 10px;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: orange url(../img/logo/small.png) center center no-repeat;
+	background-size: 10px 10px;
+}
+.xiaomi_tit:hover + .xiaomi_content{
+	/*display: none;*/
+	height: 220px;
+}

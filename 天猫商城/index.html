@@ -1,0 +1,7483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>天猫</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="myFocus/myfocus-2.0.4.min.js"></script>
+	<link rel="stylesheet" href="iconfont/iconfont.css">
+	<link rel="stylesheet" href="css/swiper-4.2.6.min.css">
+	<script src="js/swiper-4.2.6.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- 页头 -->
+	<div class="header clear" id="header">
+		<div class="headerBox clear">
+			<div class="headerLeft">
+				<em>喵，欢迎来天猫</em>
+				<a href="login.html">请登录</a>
+				<a href="register.html">免费注册</a>
+			</div>
+			<div class="headerRight">
+				<ul class="clear">
+					<li class="myTb ">
+						<a  href="#">    我的淘宝
+	                        <b></b>
+						</a>
+						<ol class="myTb-content">
+							<li>
+								<a href="#">已买到的宝贝</a>
+							</li>
+							<li>
+								<a href="#">已卖出的宝贝</a>
+							</li>
+						</ol>
+					</li>
+					<li class="shoppingCart">
+						<a href="shoppingCart.html">
+							购物车<span>0</span>件
+						</a>
+					</li>
+					<li class="myCollect myTb">
+						<a href="#">
+						    收藏夹
+							<b></b>
+					    </a>
+						<ol class="myTb-content" id="myCollect-content">
+							<li>
+								<a href="#">收藏的宝贝</a>
+							</li>
+							<li>
+								<a href="#">收藏的店铺</a>
+							</li>
+						</ol>
+					</li>
+					<li class="empty"></li>
+					<li class="phone">
+						<a href="#">手机版</a>
+						<div class="phone-content">
+							
+						</div>
+					</li>
+					<li class="tbNet">
+						<a href="#">淘宝网</a>
+					</li>
+					<li class="mySupport myTb">
+						<a href="#">
+							商家支持
+							<b></b>
+						</a>
+						<ul>
+							<li id="mySupport-a">
+								<h3>商家：</h3>
+								<ol class="clear">
+									<li><a href="#">商家中心</a></li>
+									<li id="S-right"><a href="#">天猫规则</a></li>
+									<li><a href="#">商家入驻</a></li>
+									<li id="S-right"><a href="#">运营服务</a></li>
+									<li><a href="#">商家品控</a></li>
+									<li id="S-right"><a href="#">商家工具</a></li>
+									<li><a href="#">天猫智库</a></li>
+									<li id="S-right"><a href="#">喵言妙语</a></li>
+								</ol>
+							</li>
+	                        <li>
+	                        	<h3>帮助</h3>
+	                        	<ol class="clear">
+	                        		<li>
+	                        			<a href="#">帮助中心</a>
+	                        		</li>
+	                        		<li id="S-right">
+	                        			<a href="#">问商友</a>
+	                        		</li>
+	                        	</ol>
+	                        </li>
+						</ul>
+					</li>
+					<li class="header-nav myTb">
+						<span class="glyphicon glyphicon-th-list" aria-hidden="true"></span>
+						<a>
+						    网站导航
+							<b></b>
+						</a>	
+							<div class="header-nav-content">
+								<ul>
+									<li class="header-nav-content-left">
+										<h3>热点推荐 Hot</h3>
+										<a href="#">天猫超市</a>
+										<a href="#">喵先生</a>
+										<a href="#">科技新品</a>
+										<a href="#">女装新品</a>
+										<a href="#">酷玩街</a>
+										<a href="#">内衣新品</a>
+										<a href="#">试美妆</a>
+										<a href="#">运动新品</a>
+										<a href="#">时尚先生</a>
+										<a href="#">精明妈咪</a>
+										<a href="#">吃乐会</a>
+										<a href="#">企业采购</a>
+										<a href="#">会员积分</a>
+										<a href="#">天猫国际</a>
+										<a href="#">品质频道</a>
+									</li>
+									<li  class="header-nav-content-middle">
+										<h3>行业市场 Market</h3>
+										<a href="#">美妆</a>
+										<a href="#">电器</a>
+										<a href="#">女装</a>
+										<a href="#">男装</a>
+										<a href="#">女鞋</a>
+										<a href="#">男鞋</a>
+										<a href="#">内衣</a>
+										<a href="#">箱包</a>
+										<a href="#">运动</a>
+										<a href="#">母婴</a>
+										<a href="#">家装</a>
+										<a href="#">医药</a>
+										<a href="#">食品</a>
+										<a href="#">配饰</a>
+										<a href="#">汽车</a>
+									</li>
+									<li  class="header-nav-content-right">
+										<h3>服务指南 Help</h3>
+										<a href="#">帮助中心</a>
+										<a href="#">品质保障</a>
+										<a href="#">特色服务</a>
+										<a href="#">7天退换货</a>
+									</li>
+								</ul>
+							</div>
+					    </span>
+					</li>
+				</ul>
+			</div>
+		</div>
+		
+	</div><!-- header结束 -->
+	<div class="nav_box">
+		<div class="nav clear">
+		<div class="nav-logo">
+			<img src="img/nav-logo.gif" alt="" width="240" height="130">
+		</div>
+		<div class="nav-search">
+			<div class="nav-search-form">
+				<form >
+					<input class="nav-search-form-text" type="text" name="q" placeholder="搜索 天猫 商品/品牌/店铺">
+					<input class="nav-search-form-submit" type="submit" value="搜索">
+				</form>
+				<div class="nav-search-hot">
+					<ul>
+						<li>
+							<a href="#">针织衫</a>
+						</li>
+						<li>
+							<a href="#">连衣裙</a>
+						</li>
+						<li>
+							<a href="#">四件套</a>
+						</li>
+						<li>
+							<a href="#">摄像头</a>
+						</li>
+						<li>
+							<a href="#">客厅灯</a>
+						</li>
+						<li>
+							<a href="#">口红</a>
+						</li>
+						<li>
+							<a href="#">手机</a>
+						</li>
+						<li>
+							<a href="#">运动鞋</a>
+						</li>
+						<li>
+							<a href="#">牛奶</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div><!-- nav结束 -->
+	</div>
+	
+	<div class="sideBar">
+		<div class="sideBar-content">
+		<ul>
+			<li class="sideBar-member">
+				<a href="#"></a>
+				<div>会员权益</div>
+			</li>
+			<li class="sideBar-shoppingCart">
+				<a href="#">购物车</a>
+			</li>
+			<li class="sideBar-rmb">
+				<a href="#"></a>
+				<div>我的资产</div>
+			</li>
+			<li class="sideBar-star">
+				<a href="#"></a>
+				<div>我的收藏</div>
+			</li>
+			<li class="sideBar-history">
+				<a href="#"></a>
+				<div>我看过的</div>
+			</li>
+			<li class="sideBar-recharge">
+				<a href="#"></a>
+				<div>我要充值</div>
+			</li>
+			<li class="sideBar-feedback">
+				<a href="#"></a>
+				<div>用户反馈</div>
+			</li>
+			<li class="sideBar-qrcode">
+				<a href="#"></a>
+				<div id="sideBar-qrcode-content">
+					<img src="img/sideBar_qrcode.jpg" alt="" width="100" height="100">
+					<img src="img/sideBar_qrcode_gift.png" width="135" height="45" alt="">
+				</div>
+			</li>
+			<li class="sideBar-toTop">
+				<a href="#header"></a>
+				<div>返回顶部</div>
+			</li>
+		</ul>
+		</div>
+	</div><!-- sideBar结束 -->
+	<div class="bannerBox">
+		<div class="banner">
+		<div class="banner-title">
+			<a href="#"><img src="img/banner_title1.png" alt="" width="100" height="30"></a>
+			<a href="#"><img src="img/banner_title2.png" alt="" width="100" height="30"></a>
+			<a href="#">天猫会员</a>
+			<a href="#">电器城</a>
+			<a href="#">喵鲜生</a>
+			<a href="#">医药馆</a>
+			<a href="#">营业厅</a>
+			<a href="#">魅力惠</a>
+			<a href="#">飞猪旅行</a>
+			<a href="#">苏宁易购</a>
+		</div>
+		<div class="banner-content">
+			<div id="picBox">
+			<div class="pic banner-content-pic swiper-container" >
+				<ul class="swiper-wrapper">
+					<li class="swiper-slide">
+						<a href="#"><img src="img/banner-content-pic1_.webp" alt="" width="1230" height="500"></a>
+						<a class="banner_small1" href="#"><img  src="img/banner_small1.webp" alt="" width="220" height="235" ></a>
+			            <a class="banner_small2" href="#"><img src="img/banner_small2.webp" alt="" width="220" height="235"></a>
+					</li>
+					<li class="swiper-slide">
+						<a href="#"><img src="img/banner-content-pic2.jpg" alt="" width="1230" height="500"></a>
+					</li>
+					<li class="swiper-slide">
+						<a href="#"><img src="img/banner-content-pic3.jpg" alt="" width="1230" height="500"></a>
+						<a href="#"><img class="banner_small1" src="img/banner_small2.webp" alt="" width="220" height="235" ></a>
+			            <a href="#"><img class="banner_small2" src="img/banner_small3.webp" alt="" width="220" height="235"></a>
+					</li>
+					<li class="swiper-slide">
+						<a href="#"><img src="img/banner-content-pic4.jpg" alt="" width="1230" height="500"></a>
+					</li>
+					<li class="swiper-slide">
+						<a href="#"><img src="img/banner-content-pic5.webp" alt="" width="1230" height="500"></a>
+						<a href="#"><img class="banner_small1" src="img/banner_small4.webp" alt="" width="220" height="235" ></a>
+			            <a href="#"><img class="banner_small2" src="img/banner_small5.webp" alt="" width="220" height="235"></a>
+					</li>
+					<li class="swiper-slide">
+						<a href="#"><img src="img/banner-content-pic6.webp" alt="" width="1230" height="500"></a>
+						<a href="#"><img class="banner_small1" src="img/banner_small6.webp" alt="" width="220" height="235" ></a>
+			            <a href="#"><img class="banner_small2" src="img/banner_small7.webp" alt="" width="220" height="235"></a>
+					</li>
+				</ul>
+				<div class="swiper-pagination"></div>
+			</div>
+			</div>
+			<div class="banner-content-list">
+				<div class="banner-content-list-title">
+					<i  class="iconfont">&#xe656;</i>
+				    <h3>商品分类</h3>
+				</div>
+				<ul>
+					<li>
+						<i class="iconfont">&#xe6b8;</i>
+						<a href="#">女装/内衣</a>
+						<div class="banner-nz-wrap clear">
+						<ol class="banner-nz-list clear">
+							<li>
+								<h3>当季流行</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">夏季新品</a>
+									</li>
+									<li>
+										<a href="#">商场同款</a>
+									</li>
+									<li>
+										<a href="#">仙女连衣裙</a>
+									</li>
+									<li>
+										<a href="#">T恤</a>
+									</li>
+									<li>
+										<a href="#">衬衫</a>
+									</li>
+									<li>
+										<a href="#">时髦外套</a>
+									</li>
+									<li>
+										<a href="#">休闲裤</a>
+									</li>
+									<li>
+										<a href="#">牛仔裤</a>
+									</li>
+									<li>
+										<a href="#">无痕文胸</a>
+									</li>
+									<li>
+										<a href="#">运动文胸</a>
+									</li>
+									<li>
+										<a href="#">潮流家居服</a>
+									</li>
+									<li>
+										<a href="#">百搭船袜</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>精选上装</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">仙女连衣裙</a>
+									</li>
+									<li>
+										<a href="#">T恤</a>
+									</li>
+									<li>
+										<a href="#">衬衫</a>
+									</li>
+									<li>
+										<a href="#">雪纺衫</a>
+									</li>
+									<li>
+										<a href="#">卫衣</a>
+									</li>
+									<li>
+										<a href="#">短外套</a>
+									</li>
+									<li>
+										<a href="#">丝绒卫衣</a>
+									</li>
+									<li>
+										<a href="#">毛针织衫</a>
+									</li>
+									<li>
+										<a href="#">小西装</a>
+									</li>
+									<li>
+										<a href="#">风衣</a>
+									</li>
+									
+								</ul>
+							</li>
+							<li>
+								<h3>浪漫裙装</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">连衣裙</a>
+									</li>
+									<li>
+										<a href="#">半身裙</a>
+									</li>
+									<li>
+										<a href="#">A字裙</a>
+									</li>
+									<li>
+										<a href="#">荷叶边裙</a>
+									</li>
+									<li>
+										<a href="#">大摆裙</a>
+									</li>
+									<li>
+										<a href="#">包臀裙</a>
+									</li>
+									<li>
+										<a href="#">百褶裙</a>
+									</li>
+									<li>
+										<a href="#">长袖连衣裙</a>
+									</li>
+									<li>
+										<a href="#">棉麻连衣裙</a>
+									</li>
+									<li>
+										<a href="#">牛仔裙</a>
+									</li>
+									<li>
+										<a href="#">蕾丝连衣裙</a>
+									</li>
+									<li>
+										<a href="#">真丝连衣裙</a>
+									</li>
+									<li>
+										<a href="#">印花连衣裙</a>
+									</li>
+									
+								</ul>
+							</li>
+								<li>
+								<h3>女士夏装</h3>
+								<ul class="banner-nz-content  clear">
+									<li>
+										<a href="#">休闲裤</a>
+									</li>
+									<li>
+										<a href="#">阔腿裤</a>
+									</li>
+									<li>
+										<a href="#">牛仔裤</a>
+									</li>
+									<li>
+										<a href="#">打底裤</a>
+									</li>
+									<li>
+										<a href="#">开叉运动裤</a>
+									</li>
+									<li>
+										<a href="#">哈伦裤</a>
+									</li>
+									<li>
+										<a href="#">背带裤</a>
+									</li>
+									<li>
+										<a href="#">小脚裤</a>
+									</li>
+									<li>
+										<a href="#">西装裤</a>
+									</li>
+									<li>
+										<a href="#">短裤</a>
+									</li>
+									
+								</ul>
+							</li>
+								<li>
+								<h3>特色女装</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">时尚套装</a>
+									</li>
+									<li>
+										<a href="#">休闲套装</a>
+									</li>
+									<li>
+										<a href="#">日系女装</a>
+									</li>
+									<li>
+										<a href="#">精选妈妈装</a>
+									</li>
+									<li>
+										<a href="#">大码女装</a>
+									</li>
+									<li>
+										<a href="#">职业套装</a>
+									</li>
+									<li>
+										<a href="#">优雅旗袍</a>
+									</li>
+									<li>
+										<a href="#">精致礼服</a>
+									</li>
+									<li>
+										<a href="#">婚纱</a>
+									</li>
+									<li>
+										<a href="#">唐装</a>
+									</li>
+									<li>
+										<a href="#">小码女装</a>
+									</li>
+									
+								</ul>
+							</li>
+							<li>
+								<h3>文胸塑身</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">光面文胸</a>
+									</li>
+									<li>
+										<a href="#">运动文胸</a>
+									</li>
+									<li>
+										<a href="#">美背文胸</a>
+									</li>
+									<li>
+										<a href="#">聚拢文胸</a>
+									</li>
+									<li>
+										<a href="#">大杯文胸</a>
+									</li>
+									<li>
+										<a href="#">轻薄塑身</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>家居服</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">春夏家居服</a>
+									</li>
+									<li>
+										<a href="#">纯棉家居服</a>
+									</li>
+									<li>
+										<a href="#">莫代尔家居服</a>
+									</li>
+									<li>
+										<a href="#">真丝家居服</a>
+									</li>
+									<li>
+										<a href="#">春夏睡裙</a>
+									</li>
+									<li>
+										<a href="#">男士家居服</a>
+									</li>
+									<li>
+										<a href="#">情侣家居服</a>
+									</li>
+									<li>
+										<a href="#">性感睡裙</a>
+									</li>
+								</ul>
+							</li>
+						</ol>
+						<div class="banner-list-brand clear"  id="displayBig">
+							<ul>
+								<li>
+									<a href="#"><img src="img/nz1.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nz2.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nz3.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nz4.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nz5.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nz6.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nz7.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nz8.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nz9.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nz10.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nz11.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nz12.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nz13.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nz14.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nz15.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nz16.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nz17.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						</div>
+
+					</li>
+					<li>
+						<i class="iconfont">&#xe601;</i>
+						<a href="#">男装/运动户外</a>
+                        <div class="banner-nz-wrap clear">
+						<ol class="banner-nz-list clear">
+							<li>
+								<h3>当季流行</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">夏季新品</a>
+									</li>
+									<li>
+										<a href="#">商场同款</a>
+									</li>
+									<li>
+										<a href="#">印花T恤</a>
+									</li>
+									<li>
+										<a href="#">棉麻面料</a>
+									</li>
+									<li>
+										<a href="#">修身夹克</a>
+									</li>
+									<li>
+										<a href="#">潮流卫衣</a>
+									</li>
+									<li>
+										<a href="#">牛仔衬衫</a>
+									</li>
+									<li>
+										<a href="#">保暖棉服</a>
+									</li>
+									<li>
+										<a href="#">温暖的针织衫</a>
+									</li>
+									<li>
+										<a href="#">修身西服</a>
+									</li>
+									<li>
+										<a href="#">秋冬卫衣</a>
+									</li>
+									<li>
+										<a href="#">束脚裤</a>
+									</li>
+									<li>
+										<a href="#">九分裤</a>
+									</li>
+									<li>
+										<a href="#">破洞牛仔裤</a>
+									</li>
+									<li>
+										<a href="#">跑步鞋</a>
+									</li>
+									<li>
+										<a href="#">休闲鞋</a>
+									</li>
+									<li>
+										<a href="#">篮球鞋</a>
+									</li>
+									<li>
+										<a href="#">自行车</a>
+									</li>
+									<li>
+										<a href="#">平衡车</a>
+									</li>
+									<li>
+										<a href="#">帆布鞋</a>
+									</li>
+									<li>
+										<a href="#">运动套装</a>
+									</li>
+									<li>
+										<a href="#">运动卫衣</a>
+									</li>
+									<li>
+										<a href="#">鱼竿</a>
+									</li>
+									<li>
+										<a href="#">冲锋衣</a>
+									</li>
+									<li>
+										<a href="#">跑步机</a>
+									</li>
+									<li>
+										<a href="#">电动车</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>男士外套</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">夹克</a>
+									</li>
+									<li>
+										<a href="#">单西</a>
+									</li>
+									<li>
+										<a href="#">棒球服</a>
+									</li>
+									<li>
+										<a href="#">棉衣</a>
+									</li>
+									<li>
+										<a href="#">毛呢大衣</a>
+									</li>
+									<li>
+										<a href="#">风衣</a>
+									</li>
+									<li>
+										<a href="#">西服套装</a>
+									</li>
+									<li>
+										<a href="#">羽绒服</a>
+									</li>
+									<li>
+										<a href="#">皮衣</a>
+									</li>
+									<li>
+										<a href="#">运动服</a>
+									</li>
+									<li>
+										<a href="#">工装外套</a>
+									</li>
+									<li>
+										<a href="#">针织开衫</a>
+									</li>
+									<li>
+										<a href="#">马甲</a>
+									</li>
+									
+								</ul>
+							</li>
+							<li>
+								<h3>男士内搭</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">短袖T恤</a>
+									</li>
+									<li>
+										<a href="#">POLO衫</a>
+									</li>
+									<li>
+										<a href="#">短袖衬衫</a>
+									</li>
+									<li>
+										<a href="#">背心</a>
+									</li>
+									<li>
+										<a href="#">卫衣</a>
+									</li>
+									<li>
+										<a href="#">针织衫/毛衣</a>
+									</li>
+									<li>
+										<a href="#">长袖衬衫</a>
+									</li>
+									<li>
+										<a href="#">长袖T恤</a>
+									</li>
+									
+								</ul>
+							</li>
+								<li>
+								<h3>男士裤装</h3>
+								<ul class="banner-nz-content  clear">
+									<li>
+										<a href="#">小脚裤</a>
+									</li>
+									<li>
+										<a href="#">9分裤</a>
+									</li>
+									<li>
+										<a href="#">短裤</a>
+									</li>
+									<li>
+										<a href="#">休闲裤</a>
+									</li>
+									<li>
+										<a href="#">牛仔裤</a>
+									</li>
+									<li>
+										<a href="#">针织裤</a>
+									</li>
+									<li>
+										<a href="#">西裤</a>
+									</li>
+									<li>
+										<a href="#">运动裤</a>
+									</li>
+									<li>
+										<a href="#">工装裤</a>
+									</li>
+									
+								</ul>
+							</li>
+								<li>
+								<h3>特色男装</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">潮牌</a>
+									</li>
+									<li>
+										<a href="#">中老年</a>
+									</li>
+									<li>
+										<a href="#">加大码</a>
+									</li>
+									<li>
+										<a href="#">职场精英</a>
+									</li>
+									<li>
+										<a href="#">中国风</a>
+									</li>
+									<li>
+										<a href="#">情侣装</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>运动服</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">短袖T恤</a>
+									</li>
+									<li>
+										<a href="#">运动裤</a>
+									</li>
+									<li>
+										<a href="#">运动内衣</a>
+									</li>
+									<li>
+										<a href="#">速干t恤</a>
+									</li>
+									<li>
+										<a href="#">运动polo</a>
+									</li>
+									<li>
+										<a href="#">运动卫衣</a>
+									</li>
+									<li>
+										<a href="#">运动套装</a>
+									</li>
+									<li>
+										<a href="#">运动短裤</a>
+									</li>
+									<li>
+										<a href="#">健身服</a>
+									</li>
+									<li>
+										<a href="#">运动夹克</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>户外用品</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">钓竿</a>
+									</li>
+									<li>
+										<a href="#">双肩背包</a>
+									</li>
+									<li>
+										<a href="#">防晒衣</a>
+									</li>
+									<li>
+										<a href="#">户外包</a>
+									</li>
+									<li>
+										<a href="#">帐篷</a>
+									</li>
+									<li>
+										<a href="#">手电筒</a>
+									</li>
+									<li>
+										<a href="#">刀具</a>
+									</li>
+								</ul>
+							</li>
+						</ol>
+						<div class="banner-list-brand clear" id="displayBig">
+							<ul>
+								<li>
+									<a href="#"><img src="img/nan1.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nan2.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nan3.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nan4.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nan5.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nan6.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nan7.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nan8.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nan9.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nan10.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nan11.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nan12.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nan13.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nan14.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nan15.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nan16.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nan17.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</li>
+					<li>
+						<i class="iconfont">&#xe621;</i>
+						<a href="#">女鞋/男鞋/箱包</a>
+						<div class="banner-nz-wrap clear">
+						<ol class="banner-nz-list clear">
+							<li>
+								<h3>推荐女鞋</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">潮流过膝靴</a>
+									</li>
+									<li>
+										<a href="#">气质百搭踝靴</a>
+									</li>
+									<li>
+										<a href="#">永远的帆布鞋</a>
+									</li>
+									<li>
+										<a href="#">流行松糕底</a>
+									</li>
+									<li>
+										<a href="#">英伦牛津鞋</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>潮流男鞋</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">商场同款</a>
+									</li>
+									<li>
+										<a href="#">休闲鞋</a>
+									</li>
+									<li>
+										<a href="#">正装皮鞋</a>
+									</li>
+									<li>
+										<a href="#">休闲皮鞋</a>
+									</li>
+									<li>
+										<a href="#">板鞋</a>
+									</li>
+									<li>
+										<a href="#">户外休闲</a>
+									</li>
+									<li>
+										<a href="#">帆布鞋</a>
+									</li>
+									<li>
+										<a href="#">运动休闲</a>
+									</li>
+									<li>
+										<a href="#">乐福鞋</a>
+									</li>
+									<li>
+										<a href="#">豆豆鞋</a>
+									</li>
+									<li>
+										<a href="#">帆船鞋</a>
+									</li>
+									<li>
+										<a href="#">布鞋</a>
+									</li>
+									
+								</ul>
+							</li>
+							<li>
+								<h3>女单鞋</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">单鞋</a>
+									</li>
+									<li>
+										<a href="#">小白鞋</a>
+									</li>
+									<li>
+										<a href="#">商场同款</a>
+									</li>
+									<li>
+										<a href="#">帆布鞋</a>
+									</li>
+									<li>
+										<a href="#">深口单鞋</a>
+									</li>
+									<li>
+										<a href="#">浅口单鞋</a>
+									</li>
+									<li>
+										<a href="#">平底单鞋</a>
+									</li>
+									<li>
+										<a href="#">高跟单鞋</a>
+									</li>
+									<li>
+										<a href="#">坡跟单鞋</a>
+									</li>
+									<li>
+										<a href="#">豆豆鞋</a>
+									</li>
+									<li>
+										<a href="#">乐福鞋</a>
+									</li>
+									<li>
+										<a href="#">牛津鞋</a>
+									</li>
+								</ul>
+							</li>
+								<li>
+								<h3>特色鞋</h3>
+								<ul class="banner-nz-content  clear">
+									<li>
+										<a href="#">妈妈鞋</a>
+									</li>
+									<li>
+										<a href="#">大码女鞋</a>
+									</li>
+									<li>
+										<a href="#">小码女鞋</a>
+									</li>
+									<li>
+										<a href="#">女内增高</a>
+									</li>
+									<li>
+										<a href="#">男内增高</a>
+									</li>
+									<li>
+										<a href="#">软轻风</a>
+									</li>
+									<li>
+										<a href="#">爸爸鞋</a>
+									</li>
+									<li>
+										<a href="#">大码男鞋</a>
+									</li>
+									<li>
+										<a href="#">小码男鞋</a>
+									</li>
+								</ul>
+							</li>
+								<li>
+								<h3>潮流女包</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">新品推荐</a>
+									</li>
+									<li>
+										<a href="#">商场同款</a>
+									</li>
+									<li>
+										<a href="#">女士钱包</a>
+									</li>
+									<li>
+										<a href="#">单肩包</a>
+									</li>
+									<li>
+										<a href="#">斜款包</a>
+									</li>
+									<li>
+										<a href="#">手提包</a>
+									</li>
+									<li>
+										<a href="#">手拿包</a>
+									</li>
+									<li>
+										<a href="#">腰包</a>
+									</li>
+									<li>
+										<a href="#">胸包</a>
+									</li>
+									<li>
+										<a href="#">化妆好</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>精品男包</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">男士钱包</a>
+									</li>
+									<li>
+										<a href="#">收纳包</a>
+									</li>
+									<li>
+										<a href="#">胸包</a>
+									</li>
+									<li>
+										<a href="#">腰包</a>
+									</li>
+									<li>
+										<a href="#">手拿包</a>
+									</li>
+									<li>
+										<a href="#">手提包</a>
+									</li>
+									<li>
+										<a href="#">斜挎包</a>
+									</li>
+									<li>
+										<a href="#">单肩包</a>
+									</li>
+									<li>
+										<a href="#">商场同款</a>
+									</li>
+									<li>
+										<a href="#">新品推荐</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>功能箱包</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">旅行箱包</a>
+									</li>
+									<li>
+										<a href="#">万向轮椅旅</a>
+									</li>
+									<li>
+										<a href="#">旅行袋</a>
+									</li>
+									<li>
+										<a href="#">女士双肩包</a>
+									</li>
+									<li>
+										<a href="#">男士双肩包</a>
+									</li>
+									<li>
+										<a href="#">韩版双肩包</a>
+									</li>
+									<li>
+										<a href="#">双肩包铆钉</a>
+									</li>
+									<li>
+										<a href="#">女士钱包</a>
+									</li>
+									<li>
+										<a href="#">男士钱包</a>
+									</li>
+									<li>
+										<a href="#">大容量</a>
+									</li>
+									<li>
+										<a href="#">印花</a>
+									</li>
+								</ul>
+							</li>
+						</ol>
+						<div class="banner-list-brand clear">
+							<ul>
+								<li>
+									<a href="#"><img src="img/nx1.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nx2.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nx3.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nx4.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nx5.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nx6.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nx7.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nx8.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nx9.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nx10.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nx11.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nx12.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nx13.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nx14.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nx15.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/nx16.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</li>
+					<li>
+						<i class="iconfont">&#xe68d;</i>
+						<a href="#">美妆/个人护理</a>
+						<div class="banner-nz-wrap clear">
+						<ol class="banner-nz-list clear">
+							<li>
+								<h3>护肤品</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">官方直售</a>
+									</li>
+									<li>
+										<a href="#">面膜</a>
+									</li>
+									<li>
+										<a href="#">护肤套装</a>
+									</li>
+									<li>
+										<a href="#">乳液面霜</a>
+									</li>
+									<li>
+										<a href="#">精华液</a>
+									</li>
+									<li>
+										<a href="#">护手霜</a>
+									</li>
+									<li>
+										<a href="#">爽肤水</a>
+									</li>
+									<li>
+										<a href="#">洁面</a>
+									</li>
+									<li>
+										<a href="#">眼霜</a>
+									</li>
+									<li>
+										<a href="#">身体乳</a>
+									</li>
+									<li>
+										<a href="#">卸妆</a>
+									</li>
+									<li>
+										<a href="#">身体护理</a>
+									</li>
+									<li>
+										<a href="#">男士护理</a>
+									</li>
+									<li>
+										<a href="#">精油芳疗</a>
+									</li>
+									<li>
+										<a href="#">丰胸</a>
+									</li>
+									<li>
+										<a href="#">面部喷雾</a>
+									</li>
+									<li>
+										<a href="#">T区护理</a>
+									</li>
+									<li>
+										<a href="#">去角质</a>
+									</li>
+									<li>
+										<a href="#">补水</a>
+									</li>
+									<li>
+										<a href="#">祛痘</a>
+									</li>
+									<li>
+										<a href="#">敏感修护</a>
+									</li>
+									<li>
+										<a href="#">线上专柜</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>彩妆</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">时尚彩妆</a>
+									</li>
+									<li>
+										<a href="#">香水</a>
+									</li>
+									<li>
+										<a href="#">BB霜</a>
+									</li>
+									<li>
+										<a href="#">美容工具</a>
+									</li>
+									<li>
+										<a href="#">口红</a>
+									</li>
+									<li>
+										<a href="#">隔离</a>
+									</li>
+									<li>
+										<a href="#">粉底</a>
+									</li>
+									<li>
+										<a href="#">粉饼</a>
+									</li>
+									<li>
+										<a href="#">气垫bb</a>
+									</li>
+									<li>
+										<a href="#">指甲油</a>
+									</li>
+									<li>
+										<a href="#">美甲工具</a>
+									</li>
+									<li>
+										<a href="#">眉笔</a>
+									</li>
+									<li>
+										<a href="#">睫毛膏</a>
+									</li>
+									<li>
+										<a href="#">眼线</a>
+									</li>
+									<li>
+										<a href="#">唇彩</a>
+									</li>
+									<li>
+										<a href="#">眼影</a>
+									</li>
+									<li>
+										<a href="#">蜜粉</a>
+									</li>
+									<li>
+										<a href="#">彩妆套装</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>男士护肤</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">洁面</a>
+									</li>
+									<li>
+										<a href="#">爽肤水</a>
+									</li>
+									<li>
+										<a href="#">乳液/面霜</a>
+									</li>
+									<li>
+										<a href="#">面膜</a>
+									</li>
+									<li>
+										<a href="#">面部精华</a>
+									</li>
+									<li>
+										<a href="#">眼部护理</a>
+									</li>
+									<li>
+										<a href="#">防晒</a>
+									</li>
+									<li>
+										<a href="#">唇部护理</a>
+									</li>
+									<li>
+										<a href="#">T区护理</a>
+									</li>
+									<li>
+										<a href="#">控油</a>
+									</li>
+								</ul>
+							</li>
+								<li>
+								<h3>肤质推选</h3>
+								<ul class="banner-nz-content  clear">
+									<li>
+										<a href="#">混合偏油性</a>
+									</li>
+									<li>
+										<a href="#">中性偏干性</a>
+									</li>
+									<li>
+										<a href="#">敏感性</a>
+									</li>
+									<li>
+										<a href="#">干性</a>
+									</li>
+									<li>
+										<a href="#">油性</a>
+									</li>
+									<li>
+										<a href="#">混合型</a>
+									</li>
+									<li>
+										<a href="#">中性</a>
+									</li>
+								</ul>
+							</li>
+								<li>
+								<h3>美发护发</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">洗发水</a>
+									</li>
+									<li>
+										<a href="#">进口洗发水</a>
+									</li>
+									<li>
+										<a href="#">护发素</a>
+									</li>
+									<li>
+										<a href="#">发膜</a>
+									</li>
+									<li>
+										<a href="#">洗护套装</a>
+									</li>
+									<li>
+										<a href="#">护发精油</a>
+									</li>
+									<li>
+										<a href="#">头发造型</a>
+									</li>
+									<li>
+										<a href="#">弹力素</a>
+									</li>
+									<li>
+										<a href="#">染发素</a>
+									</li>
+									<li>
+										<a href="#">整顶假发</a>
+									</li>
+									<li>
+										<a href="#">假发配件</a>
+									</li>
+									<li>
+										<a href="#">男性假发</a>
+									</li>
+									
+								</ul>
+							</li>
+							<li>
+								<h3>口腔护理</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">牙膏</a>
+									</li>
+									<li>
+										<a href="#">进口牙膏</a>
+									</li>
+									<li>
+										<a href="#">牙刷</a>
+									</li>
+									<li>
+										<a href="#">进口牙刷</a>
+									</li>
+									<li>
+										<a href="#">漱口水</a>
+									</li>
+									<li>
+										<a href="#">牙线</a>
+									</li>
+									<li>
+										<a href="#">牙粉</a>
+									</li>
+									<li>
+										<a href="#">口气清新剂</a>
+									</li>
+									<li>
+										<a href="#">牙贴</a>
+									</li>
+									<li>
+										<a href="#">口腔美白</a>
+									</li>
+									<li>
+										<a href="#">假牙清洁</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>身体女性</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">沐浴露</a>
+									</li>
+									<li>
+										<a href="#">香皂</a>
+									</li>
+									<li>
+										<a href="#">泡澡盐浴</a>
+									</li>
+									<li>
+										<a href="#">护足</a>
+									</li>
+									<li>
+										<a href="#">洗手液</a>
+									</li>
+									<li>
+										<a href="#">手动剃须刀</a>
+									</li>
+									<li>
+										<a href="#">卫生巾</a>
+									</li>
+								</ul>
+							</li>
+						</ol>
+						<div class="banner-list-brand clear">
+							<ul>
+								<li>
+									<a href="#"><img src="img/mz1.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/mz2.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/mz3.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/mz4.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/mz5.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/mz6.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/mz7.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/mz8.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/mz9.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/mz10.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/mz11.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/mz12.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/mz13.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/mz14.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/mz15.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/mz16.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/mz17.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/mz18.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</li>
+					<li>
+						<i class="iconfont">&#xe61d;</i>
+						<a href="#">腕表/眼镜/珠宝饰品</a>
+						<div class="banner-nz-wrap clear">
+						<ol class="banner-nz-list clear">
+							<li>
+								<h3>黄金首饰</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">耳钉</a>
+									</li>
+									<li>
+										<a href="#">黄金项链</a>
+									</li>
+									<li>
+										<a href="#">投资黄金</a>
+									</li>
+									<li>
+										<a href="#">婚嫁套饰</a>
+									</li>
+									<li>
+										<a href="#">黄金对戒</a>
+									</li>
+									<li>
+										<a href="#">转运珠</a>
+									</li>
+									<li>
+										<a href="#">足金饰品</a>
+									</li>
+									<li>
+										<a href="#">K金饰品</a>
+									</li>
+									<li>
+										<a href="#">商场同款</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>钻石珠宝</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">结婚钻戒</a>
+									</li>
+									<li>
+										<a href="#">钻石吊坠</a>
+									</li>
+									<li>
+										<a href="#">钻石耳饰</a>
+									</li>
+									<li>
+										<a href="#">钻石手链</a>
+									</li>
+									<li>
+										<a href="#">裸钻定制</a>
+									</li>
+									<li>
+										<a href="#">红蓝宝石</a>
+									</li>
+									<li>
+										<a href="#">绿宝石</a>
+									</li>
+									<li>
+										<a href="#">坦桑石</a>
+									</li>
+									<li>
+										<a href="#">小西装</a>
+									</li>
+									<li>
+										<a href="#">其他天然石</a>
+									</li>
+									
+								</ul>
+							</li>
+							<li>
+								<h3>珍珠玉翠</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">珍珠项链送妈妈</a>
+									</li>
+									<li>
+										<a href="#">海水珍珠</a>
+									</li>
+									<li>
+										<a href="#">和田玉</a>
+									</li>
+									<li>
+										<a href="#">翡翠摆件</a>
+									</li>
+									<li>
+										<a href="#">翡翠手镯</a>
+									</li>
+									<li>
+										<a href="#">翡翠项链</a>
+									</li>
+									<li>
+										<a href="#">琥珀手链</a>
+									</li>
+									<li>
+										<a href="#">天然琥珀</a>
+									</li>
+									<li>
+										<a href="#">原矿琥珀</a>
+									</li>
+								</ul>
+							</li>
+								<li>
+								<h3>潮流饰品</h3>
+								<ul class="banner-nz-content  clear">
+									<li>
+										<a href="#">明星同款</a>
+									</li>
+									<li>
+										<a href="#">传统银饰</a>
+									</li>
+									<li>
+										<a href="#">木手串</a>
+									</li>
+									<li>
+										<a href="#">银手镯</a>
+									</li>
+									<li>
+										<a href="#">石榴石手串</a>
+									</li>
+									<li>
+										<a href="#">开口钻戒</a>
+									</li>
+									<li>
+										<a href="#">胸针</a>
+									</li>
+									<li>
+										<a href="#">宝宝银饰</a>
+									</li>
+									<li>
+										<a href="#">手链</a>
+									</li>
+									<li>
+										<a href="#">发饰</a>
+									</li>
+									<li>
+										<a href="#">手镯</a>
+									</li>
+									<li>
+										<a href="#">耳饰</a>
+									</li>
+									<li>
+										<a href="#">戒指</a>
+									</li>
+									<li>
+										<a href="#">项坠</a>
+									</li>
+									<li>
+										<a href="#">施华洛世奇</a>
+									</li>
+									<li>
+										<a href="#">shes</a>
+									</li>
+									<li>
+										<a href="#">银时代</a>
+									</li>
+									<li>
+										<a href="#">伊泰连娜</a>
+									</li>
+									<li>
+										<a href="#">PH7</a>
+									</li>
+									<li>
+										<a href="#">Monchhichi</a>
+									</li>
+									<li>
+										<a href="#">ALEXANDRE</a>
+									</li>
+								</ul>
+							</li>
+								<li>
+								<h3>腕表</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">瑞士名表</a>
+									</li>
+									<li>
+										<a href="#">日韩港表</a>
+									</li>
+									<li>
+										<a href="#">欧美手表</a>
+									</li>
+									<li>
+										<a href="#">经典国表</a>
+									</li>
+									<li>
+										<a href="#">国货精英</a>
+									</li>
+									<li>
+										<a href="#">男表</a>
+									</li>
+									<li>
+										<a href="#">女表</a>
+									</li>
+									<li>
+										<a href="#">情侣表</a>
+									</li>
+									<li>
+										<a href="#">儿童手表</a>
+									</li>
+									<li>
+										<a href="#">机械表</a>
+									</li>
+									<li>
+										<a href="#">石英表</a>
+									</li>
+									<li>
+										<a href="#">光能表</a>
+									</li>
+									<li>
+										<a href="#">防水表</a>
+									</li>
+									<li>
+										<a href="#">运动表</a>
+									</li>
+									<li>
+										<a href="#">学生表</a>
+									</li>
+									<li>
+										<a href="#">军表</a>
+									</li>
+									<li>
+										<a href="#">陶瓷表</a>
+									</li>
+									
+								</ul>
+							</li>
+							<li>
+								<h3>眼镜</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">太阳镜</a>
+									</li>
+									<li>
+										<a href="#">墨镜</a>
+									</li>
+									<li>
+										<a href="#">眼镜框</a>
+									</li>
+									<li>
+										<a href="#">近视眼镜</a>
+									</li>
+									<li>
+										<a href="#">防辐射眼镜</a>
+									</li>
+									<li>
+										<a href="#">老花镜</a>
+									</li>
+									<li>
+										<a href="#">司机镜</a>
+									</li>
+									<li>
+										<a href="#">偏光镜</a>
+									</li>
+									<li>
+										<a href="#">驾驶镜</a>
+									</li>
+									<li>
+										<a href="#">3D眼镜</a>
+									</li>
+									<li>
+										<a href="#">雷朋</a>
+									</li>
+									<li>
+										<a href="#">暴龙</a>
+									</li>
+									<li>
+										<a href="#">宝岛眼镜</a>
+									</li>
+									<li>
+										<a href="#">oakley</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>烟具</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">电子烟</a>
+									</li>
+									<li>
+										<a href="#">烟盒</a>
+									</li>
+									<li>
+										<a href="#">烟斗</a>
+									</li>
+									<li>
+										<a href="#">烟嘴</a>
+									</li>
+									<li>
+										<a href="#">烟油</a>
+									</li>
+									<li>
+										<a href="#">蒸汽烟</a>
+									</li>
+									<li>
+										<a href="#">水烟</a>
+									</li>
+									<li>
+										<a href="#">戒烟</a>
+									</li>
+									<li>
+										<a href="#">女士烟</a>
+									</li>
+									<li>
+										<a href="#">鼻烟</a>
+									</li>
+									<li>
+										<a href="#">雪茄</a>
+									</li>
+								</ul>
+							</li>
+						</ol>
+						<div class="banner-list-brand clear">
+							<ul>
+								<li>
+									<a href="#"><img src="img/zb1.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/zb2.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/zb3.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/zb4.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/zb5.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/zb6.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/zb7.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/zb8.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/zb9.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/zb10.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/zb11.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/zb12.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/zb13.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/zb14.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/zb15.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/zb16.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</li>
+					<li>
+						<i class="iconfont">&#xe62d;</i>
+						<a href="#">手机/数码/电脑办公</a>
+						<div class="banner-nz-wrap clear">
+						<ol class="banner-nz-list clear">
+							<li>
+								<h3>热门手机</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">小米</a>
+									</li>
+									<li>
+										<a href="#">iPhone</a>
+									</li>
+									<li>
+										<a href="#">魅族</a>
+									</li>
+									<li>
+										<a href="#">荣耀</a>
+									</li>
+									<li>
+										<a href="#">乐视</a>
+									</li>
+									<li>
+										<a href="#">OPPO</a>
+									</li>
+									<li>
+										<a href="#">vivo</a>
+									</li>
+									<li>
+										<a href="#">三星</a>
+									</li>
+									<li>
+										<a href="#">华为</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>特色手机</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">AiOs</a>
+									</li>
+									<li>
+										<a href="#">千元指纹</a>
+									</li>
+									<li>
+										<a href="#">双卡双待</a>
+									</li>
+									<li>
+										<a href="#">大屏</a>
+									</li>
+									<li>
+										<a href="#">自拍</a>
+									</li>
+									<li>
+										<a href="#">移动</a>
+									</li>
+									<li>
+										<a href="#">联通</a>
+									</li>
+									<li>
+										<a href="#">电信</a>
+									</li>
+									<li>
+										<a href="#">合约机</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>电脑整机</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">笔记本</a>
+									</li>
+									<li>
+										<a href="#">平板电脑</a>
+									</li>
+									<li>
+										<a href="#">台式机</a>
+									</li>
+									<li>
+										<a href="#">一体机</a>
+									</li>
+									<li>
+										<a href="#">DIY</a>
+									</li>
+									<li>
+										<a href="#">游戏本</a>
+									</li>
+									<li>
+										<a href="#">iPad</a>
+									</li>
+									<li>
+										<a href="#">Surface</a>
+									</li>
+								</ul>
+							</li>
+								<li>
+								<h3>智能数码</h3>
+								<ul class="banner-nz-content  clear">
+									<li>
+										<a href="#">智能设备</a>
+									</li>
+									<li>
+										<a href="#">智能手表</a>
+									</li>
+									<li>
+										<a href="#">智能手环</a>
+									</li>
+									<li>
+										<a href="#">VR眼镜</a>
+									</li>
+									<li>
+										<a href="#">智能摄像</a>
+									</li>
+									<li>
+										<a href="#">智能健康</a>
+									</li>
+									<li>
+										<a href="#">智能机器人</a>
+									</li>
+								</ul>
+							</li>
+								<li>
+								<h3>游戏组装</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">DIY电脑</a>
+									</li>
+									<li>
+										<a href="#">竞技DIY</a>
+									</li>
+									<li>
+										<a href="#">显示器</a>
+									</li>
+									<li>
+										<a href="#">游戏本</a>
+									</li>
+									<li>
+										<a href="#">机械键盘</a>
+									</li>
+									<li>
+										<a href="#">XBOX</a>
+									</li>
+									<li>
+										<a href="#">游戏手柄</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>硬件存储</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">显示器</a>
+									</li>
+									<li>
+										<a href="#">机械键盘</a>
+									</li>
+									<li>
+										<a href="#">固态硬盘</a>
+									</li>
+									<li>
+										<a href="#">CPU</a>
+									</li>
+									<li>
+										<a href="#">显卡</a>
+									</li>
+									<li>
+										<a href="#">主板</a>
+									</li>
+									<li>
+										<a href="#">高速U盘</a>
+									</li>
+									<li>
+										<a href="#">路由器</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>摄影摄像</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">耳机</a>
+									</li>
+									<li>
+										<a href="#">单反</a>
+									</li>
+									<li>
+										<a href="#">单电微单</a>
+									</li>
+									<li>
+										<a href="#">摄像机</a>
+									</li>
+									<li>
+										<a href="#">自拍神器</a>
+									</li>
+									<li>
+										<a href="#">拍立得</a>
+									</li>
+									<li>
+										<a href="#">镜头</a>
+									</li>
+									<li>
+										<a href="#">自拍杆</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>影音娱乐</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">耳机</a>
+									</li>
+									<li>
+										<a href="#">天猫魔盒</a>
+									</li>
+									<li>
+										<a href="#">数码影音</a>
+									</li>
+									<li>
+										<a href="#">家庭影院</a>
+									</li>
+									<li>
+										<a href="#">蓝牙耳机</a>
+									</li>
+									<li>
+										<a href="#">网络播放器</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>办公文教</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">文具</a>
+									</li>
+									<li>
+										<a href="#">电子书</a>
+									</li>
+									<li>
+										<a href="#">笔类/书写工具将</a>
+									</li>
+									<li>
+										<a href="#">智能投影</a>
+									</li>
+									<li>
+										<a href="#">打印机</a>
+									</li>
+									<li>
+										<a href="#">保险箱</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>数码配件</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">手机配件</a>
+									</li>
+									<li>
+										<a href="#">苹果配件</a>
+									</li>
+									<li>
+										<a href="#">笔记本配件</a>
+									</li>
+									<li>
+										<a href="#">平板配件</a>
+									</li>
+									<li>
+										<a href="#">相机配件</a>
+									</li>
+									<li>
+										<a href="#">手机车载配件</a>
+									</li>
+									<li>
+										<a href="#">kindle配件</a>
+									</li>
+									<li>
+										<a href="#">充电宝</a>
+									</li>
+									<li>
+										<a href="#">自拍杆</a>
+									</li>
+									<li>
+										<a href="#">数据线</a>
+									</li>
+									<li>
+										<a href="#">电池</a>
+									</li>
+								</ul>
+							</li>
+						</ol>
+						<div class="banner-list-brand clear">
+							<ul>
+								<li>
+									<a href="#"><img src="img/sj1.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sj2.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sj3.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sj4.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sj5.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sj6.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sj7.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sj8.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sj9.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sj10.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sj11.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sj12.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sj13.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sj14.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sj15.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sj16.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sj17.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</li>
+					<li>
+						<i class="iconfont">&#xe664;</i>
+						<a href="#">母婴玩具</a>
+						<div class="banner-nz-wrap clear">
+						<ol class="banner-nz-list clear">
+							<li>
+								<h3>童装</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">商场同款</a>
+									</li>
+									<li>
+										<a href="#">套装</a>
+									</li>
+									<li>
+										<a href="#">裤子</a>
+									</li>
+									<li>
+										<a href="#">外套</a>
+									</li>
+									<li>
+										<a href="#">T恤</a>
+									</li>
+									<li>
+										<a href="#">裙子</a>
+									</li>
+									<li>
+										<a href="#">内衣裤</a>
+									</li>
+									<li>
+										<a href="#">连体衣</a>
+									</li>
+									<li>
+										<a href="#">亲子装</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>童鞋</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">学步鞋</a>
+									</li>
+									<li>
+										<a href="#">运动鞋</a>
+									</li>
+									<li>
+										<a href="#">亲子鞋</a>
+									</li>
+									<li>
+										<a href="#">帆布鞋</a>
+									</li>
+									<li>
+										<a href="#">皮鞋</a>
+									</li>
+									<li>
+										<a href="#">雨靴</a>
+									</li>
+									<li>
+										<a href="#">靴子</a>
+									</li>
+									<li>
+										<a href="#">拖鞋</a>
+									</li>
+									<li>
+										<a href="#">棉鞋</a>
+									</li>
+									<li>
+										<a href="#">凉鞋</a>
+									</li>
+									
+								</ul>
+							</li>
+							<li>
+								<h3>车床用品</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">婴儿推车</a>
+									</li>
+									<li>
+										<a href="#">学步车</a>
+									</li>
+									<li>
+										<a href="#">安全座椅</a>
+									</li>
+									<li>
+										<a href="#">婴儿背带</a>
+									</li>
+									<li>
+										<a href="#">腰凳</a>
+									</li>
+									<li>
+										<a href="#">婴儿床</a>
+									</li>
+									<li>
+										<a href="#">餐椅</a>
+									</li>
+									<li>
+										<a href="#">睡袋</a>
+									</li>
+									<li>
+										<a href="#">抱被</a>
+									</li>
+								</ul>
+							</li>
+								<li>
+								<h3>洗护</h3>
+								<ul class="banner-nz-content  clear">
+									<li>
+										<a href="#">洗发水</a>
+									</li>
+									<li>
+										<a href="#">沐浴露</a>
+									</li>
+									<li>
+										<a href="#">润肌</a>
+									</li>
+									<li>
+										<a href="#">浴盆</a>
+									</li>
+									<li>
+										<a href="#">湿巾</a>
+									</li>
+									<li>
+										<a href="#">洗手液</a>
+									</li>
+									<li>
+										<a href="#">洗衣皂</a>
+									</li>
+									<li>
+										<a href="#">理发器</a>
+									</li>
+									<li>
+										<a href="#">骚虫止痒</a>
+									</li>
+								</ul>
+							</li>
+								<li>
+								<h3>玩具</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">婴儿玩具</a>
+									</li>
+									<li>
+										<a href="#">儿童自行车</a>
+									</li>
+									<li>
+										<a href="#">儿童电动车</a>
+									</li>
+									<li>
+										<a href="#">毛绒玩具</a>
+									</li>
+									<li>
+										<a href="#">积木</a>
+									</li>
+									<li>
+										<a href="#">电动遥控</a>
+									</li>
+									<li>
+										<a href="#">儿童箱包</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>天猫动漫</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">动漫周边</a>
+									</li>
+									<li>
+										<a href="#">影视周边</a>
+									</li>
+									<li>
+										<a href="#">手办</a>
+									</li>
+									<li>
+										<a href="#">高达</a>
+									</li>
+									<li>
+										<a href="#">魔术道具</a>
+									</li>
+									<li>
+										<a href="#">COSPLAY</a>
+									</li>
+									<li>
+										<a href="#">桌游</a>
+									</li>
+									<li>
+										<a href="#">变形金刚</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>奶粉</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">牛奶粉</a>
+									</li>
+									<li>
+										<a href="#">羊奶粉</a>
+									</li>
+									<li>
+										<a href="#">特殊配方奶粉</a>
+									</li>
+									<li>
+										<a href="#">宝宝辅食</a>
+									</li>
+									<li>
+										<a href="#">宝宝零食</a>
+									</li>
+									<li>
+										<a href="#">宝宝营养</a>
+									</li>
+									<li>
+										<a href="#">DHA</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>纸尿裤</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">拉拉裤</a>
+									</li>
+									<li>
+										<a href="#">纸尿片</a>
+									</li>
+									<li>
+										<a href="#">L</a>
+									</li>
+									<li>
+										<a href="#">XL</a>
+									</li>
+									<li>
+										<a href="#">M</a>
+									</li>
+									<li>
+										<a href="#">S</a>
+									</li>
+									<li>
+										<a href="#">NB</a>
+									</li>
+									<li>
+										<a href="#">新生儿组合</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>孕产</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">孕产用品</a>
+									</li>
+									<li>
+										<a href="#">孕妈洗护</a>
+									</li>
+									<li>
+										<a href="#">孕妈装</a>
+									</li>
+									<li>
+										<a href="#">月子服</a>
+									</li>
+									<li>
+										<a href="#">哺乳文胸</a>
+									</li>
+									<li>
+										<a href="#">防辐射</a>
+									</li>
+									<li>
+										<a href="#">吸奶器</a>
+									</li>
+									<li>
+										<a href="#">特产包</a>
+									</li>
+								</ul>
+							</li>
+						</ol>
+						<div class="banner-list-brand clear">
+							<ul>
+								<li>
+									<a href="#"><img src="img/my1.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/my2.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/my3.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/my4.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/my5.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/my6.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/my7.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/my8.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/my9.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/my10.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/my11.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/my12.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/my13.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/my14.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/my15.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/my16.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</li>
+					<li>
+						<i class="iconfont">&#xe602;</i>
+						<a href="#">零食/茶酒/进口食品</a>
+						<div class="banner-nz-wrap clear">
+						<ol class="banner-nz-list clear">
+							<li>
+								<h3>进口零食</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">进口零食</a>
+									</li>
+									<li>
+										<a href="#">进口巧克力</a>
+									</li>
+									<li>
+										<a href="#">进口饼干</a>
+									</li>
+									<li>
+										<a href="#">进口糖果</a>
+									</li>
+									<li>
+										<a href="#">进口坚果</a>
+									</li>
+									<li>
+										<a href="#">进口果干</a>
+									</li>
+									<li>
+										<a href="#">进口橄榄油</a>
+									</li>
+									<li>
+										<a href="#">进口牛奶</a>
+									</li>
+									<li>
+										<a href="#">进口咖啡</a>
+									</li>
+									<li>
+										<a href="#">进口饮料</a>
+									</li>
+									<li>
+										<a href="#">进口葡萄酒</a>
+									</li>
+									<li>
+										<a href="#">进口洋酒</a>
+									</li>
+									<li>
+										<a href="#">进口啤酒</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>休闲零食</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">零食</a>
+									</li>
+									<li>
+										<a href="#">坚果</a>
+									</li>
+									<li>
+										<a href="#">饼干</a>
+									</li>
+									<li>
+										<a href="#">蛋糕</a>
+									</li>
+									<li>
+										<a href="#">红枣</a>
+									</li>
+									<li>
+										<a href="#">巧克力</a>
+									</li>
+									<li>
+										<a href="#">猪肉脯</a>
+									</li>
+									<li>
+										<a href="#">膨化食品</a>
+									</li>
+									<li>
+										<a href="#">蜜饯</a>
+									</li>
+									<li>
+										<a href="#">鸭脖</a>
+									</li>
+									<li>
+										<a href="#">糖果</a>
+									</li>
+									<li>
+										<a href="#">红豆</a>
+									</li>
+									<li>
+										<a href="#">曲奇</a>
+									</li>
+									<li>
+										<a href="#">海苔</a>
+									</li>
+									<li>
+										<a href="#">肉松饼</a>
+									</li>
+									<li>
+										<a href="#">牛肉干</a>
+									</li>
+									<li>
+										<a href="#">鱿鱼丝</a>
+									</li>
+									<li>
+										<a href="#">糕点</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>酒类</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">白酒</a>
+									</li>
+									<li>
+										<a href="#">红酒</a>
+									</li>
+									<li>
+										<a href="#">洋酒</a>
+									</li>
+									<li>
+										<a href="#">啤酒</a>
+									</li>
+									<li>
+										<a href="#">黄酒</a>
+									</li>
+									<li>
+										<a href="#">保健酒</a>
+									</li>
+									<li>
+										<a href="#">预调酒</a>
+									</li>
+									<li>
+										<a href="#">配制酒</a>
+									</li>
+									<li>
+										<a href="#">葡萄酒</a>
+									</li>
+								</ul>
+							</li>
+								<li>
+								<h3>茶叶</h3>
+								<ul class="banner-nz-content  clear">
+									<li>
+										<a href="#">西湖龙井</a>
+									</li>
+									<li>
+										<a href="#">安吉白茶</a>
+									</li>
+									<li>
+										<a href="#">绿茶</a>
+									</li>
+									<li>
+										<a href="#">大红袍</a>
+									</li>
+									<li>
+										<a href="#">铁观音</a>
+									</li>
+									<li>
+										<a href="#">普洱茶</a>
+									</li>
+									<li>
+										<a href="#">玫瑰花茶</a>
+									</li>
+									<li>
+										<a href="#">柠檬片</a>
+									</li>
+									<li>
+										<a href="#">菊花茶</a>
+									</li>
+									<li>
+										<a href="#">花茶</a>
+									</li>
+									<li>
+										<a href="#">天然粉粉</a>
+									</li>
+									<li>
+										<a href="#">金骏眉</a>
+									</li>
+									<li>
+										<a href="#">红茶</a>
+									</li>
+									
+								</ul>
+							</li>
+								<li>
+								<h3>乳品冲品</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">牛奶</a>
+									</li>
+									<li>
+										<a href="#">酸奶</a>
+									</li>
+									<li>
+										<a href="#">成人奶粉</a>
+									</li>
+									<li>
+										<a href="#">儿童粉</a>
+									</li>
+									<li>
+										<a href="#">速溶咖啡</a>
+									</li>
+									<li>
+										<a href="#">滤挂咖啡</a>
+									</li>
+									<li>
+										<a href="#">咖啡豆</a>
+									</li>
+									<li>
+										<a href="#">麦片</a>
+									</li>
+									<li>
+										<a href="#">奶茶</a>
+									</li>
+									<li>
+										<a href="#">柚子茶</a>
+									</li>
+									<li>
+										<a href="#">果汁</a>
+									</li>
+									<li>
+										<a href="#">汽水</a>
+									</li>
+									<li>
+										<a href="#">功能饮料</a>
+									</li>
+									<li>
+										<a href="#">饮用水</a>
+									</li>
+									
+								</ul>
+							</li>
+							<li>
+								<h3>粮油速食</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">橄榄油</a>
+									</li>
+									<li>
+										<a href="#">食用油</a>
+									</li>
+									<li>
+										<a href="#">大米</a>
+									</li>
+									<li>
+										<a href="#">薏米</a>
+									</li>
+									<li>
+										<a href="#">玉米</a>
+									</li>
+									<li>
+										<a href="#">面粉</a>
+									</li>
+									<li>
+										<a href="#">银耳</a>
+									</li>
+									<li>
+										<a href="#">桂圆干</a>
+									</li>
+									<li>
+										<a href="#">香肠</a>
+									</li>
+									<li>
+										<a href="#">木耳</a>
+									</li>
+									<li>
+										<a href="#">香菇</a>
+									</li>
+									<li>
+										<a href="#">方便面</a>
+									</li>
+									<li>
+										<a href="#">手抓饼</a>
+									</li>
+									<li>
+										<a href="#">黄油</a>
+									</li>
+									<li>
+										<a href="#">意大利面</a>
+									</li>
+									<li>
+										<a href="#">蛋挞皮</a>
+									</li>
+									<li>
+										<a href="#">调味品</a>
+									</li>
+									<li>
+										<a href="#">红糖</a>
+									</li>
+									<li>
+										<a href="#">进口泡面</a>
+									</li>
+									<li>
+										<a href="#">粽子</a>
+									</li>
+									<li>
+										<a href="#">寿司</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>生鲜水果</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">牛排</a>
+									</li>
+									<li>
+										<a href="#">芒果</a>
+									</li>
+									<li>
+										<a href="#">奇异果</a>
+									</li>
+									<li>
+										<a href="#">蟹</a>
+									</li>
+									<li>
+										<a href="#">三文鱼</a>
+									</li>
+									<li>
+										<a href="#">虾</a>
+									</li>
+									<li>
+										<a href="#">车厘子</a>
+									</li>
+									<li>
+										<a href="#">进口鲶鱼</a>
+									</li>
+									<li>
+										<a href="#">海参</a>
+									</li>
+									<li>
+										<a href="#">苹果</a>
+									</li>
+									<li>
+										<a href="#">榴莲</a>
+									</li>
+									<li>
+										<a href="#">牛肉</a>
+									</li>
+									<li>
+										<a href="#">牛油果</a>
+									</li>
+									<li>
+										<a href="#">土鸡</a>
+									</li>
+									<li>
+										<a href="#">冰淇淋</a>
+									</li>
+									<li>
+										<a href="#">鸡蛋</a>
+									</li>
+								</ul>
+							</li>
+						</ol>
+						<div class="banner-list-brand clear">
+							<ul>
+								<li>
+									<a href="#"><img src="img/ls1.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ls2.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ls3.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ls4.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ls5.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ls6.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ls7.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ls8.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ls9.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ls10.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ls11.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ls12.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ls13.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ls14.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ls15.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ls16.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ls17.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ls18.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</li>
+					<li>
+						<i class="iconfont">&#xe60e;</i>
+						<a href="#">生鲜水果</a>
+						<div class="banner-nz-wrap clear">
+						<ol class="banner-nz-list clear">
+							<li>
+								<h3>新鲜蔬菜</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">冰激凌</a>
+									</li>
+									<li>
+										<a href="#">土豆</a>
+									</li>
+									<li>
+										<a href="#">番薯</a>
+									</li>
+									<li>
+										<a href="#">山药</a>
+									</li>
+									<li>
+										<a href="#">莲藕</a>
+									</li>
+									<li>
+										<a href="#">净菜</a>
+									</li>
+									<li>
+										<a href="#">玉米</a>
+									</li>
+									<li>
+										<a href="#">秋葵</a>
+									</li>
+									<li>
+										<a href="#">大蒜</a>
+									</li>
+									<li>
+										<a href="#">生姜</a>
+									</li>
+									<li>
+										<a href="#">南瓜</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>冰激凌</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">冰激凌</a>
+									</li>
+									<li>
+										<a href="#">哈根达斯</a>
+									</li>
+									<li>
+										<a href="#">movenpick莫凡彼</a>
+									</li>
+									<li>
+										<a href="#">本杰瑞</a>
+									</li>
+									<li>
+										<a href="#">tip-top冰激凌</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>蛋类</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">鸡蛋</a>
+									</li>
+									<li>
+										<a href="#">鸭蛋</a>
+									</li>
+									<li>
+										<a href="#">鹅蛋</a>
+									</li>
+									<li>
+										<a href="#">鸽子蛋</a>
+									</li>
+									<li>
+										<a href="#">鹌鹑蛋</a>
+									</li>
+									<li>
+										<a href="#">松花皮蛋</a>
+									</li>
+									<li>
+										<a href="#">咸鸭蛋</a>
+									</li>
+									<li>
+										<a href="#">喜蛋</a>
+									</li>
+								</ul>
+							</li>
+								<li>
+								<h3>肉类</h3>
+								<ul class="banner-nz-content  clear">
+									<li>
+										<a href="#">牛排</a>
+									</li>
+									<li>
+										<a href="#">牛腩</a>
+									</li>
+									<li>
+										<a href="#">牛腱子</a>
+									</li>
+									<li>
+										<a href="#">牛肉</a>
+									</li>
+									<li>
+										<a href="#">牛尾</a>
+									</li>
+									<li>
+										<a href="#">牛肉串</a>
+									</li>
+									<li>
+										<a href="#">牛杂</a>
+									</li>
+									<li>
+										<a href="#">羊腿</a>
+									</li>
+									<li>
+										<a href="#">羊肉串</a>
+									</li>
+									<li>
+										<a href="#">羊蝎子</a>
+									</li>
+									<li>
+										<a href="#">鸡肉</a>
+									</li>
+									<li>
+										<a href="#">鸡翅</a>
+									</li>
+									<li>
+										<a href="#">鸡胸</a>
+									</li>
+									<li>
+										<a href="#">鸡腿</a>
+									</li>
+									<li>
+										<a href="#">鸭肉</a>
+									</li>
+									<li>
+										<a href="#">乳鸽</a>
+									</li>
+									<li>
+										<a href="#">鹅肉</a>
+									</li>
+									
+								</ul>
+							</li>
+								<li>
+								<h3>海鲜水产</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">鳕鱼</a>
+									</li>
+									<li>
+										<a href="#">休闲三文鱼</a>
+									</li>
+									<li>
+										<a href="#">金枪鱼</a>
+									</li>
+									<li>
+										<a href="#">鲽鱼</a>
+									</li>
+									<li>
+										<a href="#">斑鱼</a>
+									</li>
+									<li>
+										<a href="#">比目鱼</a>
+									</li>
+									<li>
+										<a href="#">多春鱼</a>
+									</li>
+									<li>
+										<a href="#">马鲛鱼</a>
+									</li>
+									<li>
+										<a href="#">龙利鱼</a>
+									</li>
+									<li>
+										<a href="#">秋刀鱼</a>
+									</li>
+									<li>
+										<a href="#">带鱼</a>
+									</li>
+									<li>
+										<a href="#">海带</a>
+									</li>
+									<li>
+										<a href="#">墨鱼</a>
+									</li>
+									<li>
+										<a href="#">海参</a>
+									</li>
+									<li>
+										<a href="#">海蜇</a>
+									</li>
+									<li>
+										<a href="#">鱿鱼</a>
+									</li>
+									<li>
+										<a href="#">甲鱼</a>
+									</li>
+									<li>
+										<a href="#">大闸蟹</a>
+									</li>
+									<li>
+										<a href="#">帝王蟹</a>
+									</li>
+									<li>
+										<a href="#">雪蟹</a>
+									</li>
+									<li>
+										<a href="#">黄金蟹</a>
+									</li>
+									<li>
+										<a href="#">鱼丸</a>
+									</li>
+									<li>
+										<a href="#">鱼糕/鱼饼</a>
+									</li>
+									<li>
+										<a href="#">干贝/瑶柱</a>
+									</li>
+									<li>
+										<a href="#">虾仁</a>
+									</li>
+									<li>
+										<a href="#">活虾</a>
+									</li>
+									<li>
+										<a href="#">生蚝</a>
+									</li>
+									<li>
+										<a href="#">北极贝</a>
+									</li>
+									<li>
+										<a href="#">扇贝</a>
+									</li>
+									<li>
+										<a href="#">贝类</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>新鲜水果</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">奇异果</a>
+									</li>
+									<li>
+										<a href="#">车厘子/樱桃</a>
+									</li>
+									<li>
+										<a href="#">芒果</a>
+									</li>
+									<li>
+										<a href="#">牛油果</a>
+									</li>
+									<li>
+										<a href="#">火龙果</a>
+									</li>
+									<li>
+										<a href="#">苹果</a>
+									</li>
+									<li>
+										<a href="#">橙子</a>
+									</li>
+									<li>
+										<a href="#">凤梨</a>
+									</li>
+									<li>
+										<a href="#">榴莲</a>
+									</li>
+									<li>
+										<a href="#">山竹</a>
+									</li>
+									<li>
+										<a href="#">木瓜</a>
+									</li>
+									<li>
+										<a href="#">柠檬</a>
+									</li>
+									<li>
+										<a href="#">百香果</a>
+									</li>
+									<li>
+										<a href="#">椰青</a>
+									</li>
+									<li>
+										<a href="#">番荔枝/释迦</a>
+									</li>
+									<li>
+										<a href="#">龙眼</a>
+									</li>
+									<li>
+										<a href="#">蓝莓</a>
+									</li>
+									<li>
+										<a href="#">梨</a>
+									</li>
+									<li>
+										<a href="#">提子</a>
+									</li>
+									<li>
+										<a href="#">柚子</a>
+									</li>
+									<li>
+										<a href="#">芭乐</a>
+									</li>
+									<li>
+										<a href="#">莲雾</a>
+									</li>
+									<li>
+										<a href="#">桃</a>
+									</li>
+									<li>
+										<a href="#">草莓</a>
+									</li>
+									<li>
+										<a href="#">西柚</a>
+									</li>
+									<li>
+										<a href="#">荔枝</a>
+									</li>
+									<li>
+										<a href="#">石榴</a>
+									</li>
+									<li>
+										<a href="#">葡萄/橙子</a>
+									</li>
+									<li>
+										<a href="#">哈密瓜</a>
+									</li>
+									<li>
+										<a href="#">琵琶</a>
+									</li>
+									<li>
+										<a href="#">李子</a>
+									</li>
+									<li>
+										<a href="#">西瓜</a>
+									</li>
+									<li>
+										<a href="#">菠萝</a>
+									</li>
+									<li>
+										<a href="#">桔子</a>
+									</li>
+									<li>
+										<a href="#">香蕉</a>
+									</li>
+									<li>
+										<a href="#">杨桃</a>
+									</li>
+									<li>
+										<a href="#">红毛丹/毛荔枝</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>精选干货</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">干贝/瑶柱</a>
+									</li>
+									<li>
+										<a href="#">虾皮/虾米/海米</a>
+									</li>
+									<li>
+										<a href="#">大虾干</a>
+									</li>
+									<li>
+										<a href="#">花胶/鱼胶</a>
+									</li>
+									<li>
+										<a href="#">海带</a>
+									</li>
+									<li>
+										<a href="#">紫菜</a>
+									</li>
+									<li>
+										<a href="#">鱼干</a>
+									</li>
+									<li>
+										<a href="#">墨鱼干</a>
+									</li>
+								</ul>
+							</li>
+						</ol>
+						<div class="banner-list-brand clear">
+							<ul>
+								<li>
+									<a href="#"><img src="img/sg1.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sg2.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sg3.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sg4.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sg5.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sg6.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sg7.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sg8.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sg9.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sg10.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sg11.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sg12.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sg13.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sg14.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/sg15.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</li>
+					<li>
+						<i class="iconfont">&#xe6ba;</i>
+						<a href="#">大家电/生活电器</a>
+						<div class="banner-nz-wrap clear">
+						<ol class="banner-nz-list clear">
+							<li>
+								<h3>平板电视</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">4K超高清</a>
+									</li>
+									<li>
+										<a href="#">国产</a>
+									</li>
+									<li>
+										<a href="#">外资品牌</a>
+									</li>
+									<li>
+										<a href="#">曲面</a>
+									</li>
+									<li>
+										<a href="#">智能电视</a>
+									</li>
+									<li>
+										<a href="#">超级大屏</a>
+									</li>
+									<li>
+										<a href="#">云电视</a>
+									</li>
+									<li>
+										<a href="#">客厅首选</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>空调</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">热门之选</a>
+									</li>
+									<li>
+										<a href="#">节能</a>
+									</li>
+									<li>
+										<a href="#">智能</a>
+									</li>
+									<li>
+										<a href="#">变频</a>
+									</li>
+									<li>
+										<a href="#">艺术柜机</a>
+									</li>
+									<li>
+										<a href="#">挂机</a>
+									</li>
+									<li>
+										<a href="#">1.5匹</a>
+									</li>
+									<li>
+										<a href="#">中央空调</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>冰箱</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">热门之选</a>
+									</li>
+									<li>
+										<a href="#">无霜</a>
+									</li>
+									<li>
+										<a href="#">三门</a>
+									</li>
+									<li>
+										<a href="#">对开门</a>
+									</li>
+									<li>
+										<a href="#">电脑温控</a>
+									</li>
+									<li>
+										<a href="#">智能</a>
+									</li>
+									<li>
+										<a href="#">冷柜</a>
+									</li>
+									<li>
+										<a href="#">酒柜</a>
+									</li>
+								</ul>
+							</li>
+								<li>
+								<h3>洗衣机</h3>
+								<ul class="banner-nz-content  clear">
+									<li>
+										<a href="#">滚筒机</a>
+									</li>
+									<li>
+										<a href="#">波轮洗</a>
+									</li>
+									<li>
+										<a href="#">洗烘一体</a>
+									</li>
+									<li>
+										<a href="#">迷你</a>
+									</li>
+									<li>
+										<a href="#">烘干机</a>
+									</li>
+									<li>
+										<a href="#">双缸/双桶</a>
+									</li>
+									<li>
+										<a href="#">热门</a>
+									</li>
+									<li>
+										<a href="#">大容量</a>
+									</li>
+								</ul>
+							</li>
+								<li>
+								<h3>厨房大电</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">烟灶套装</a>
+									</li>
+									<li>
+										<a href="#">嵌入式烤箱</a>
+									</li>
+									<li>
+										<a href="#">嵌入式蒸箱</a>
+									</li>
+									<li>
+										<a href="#">燃气灶</a>
+									</li>
+									<li>
+										<a href="#">消毒柜</a>
+									</li>
+									<li>
+										<a href="#">洗碗机</a>
+									</li>
+									<li>
+										<a href="#">集成灶</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>热水器</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">电热水器</a>
+									</li>
+									<li>
+										<a href="#">燃气热水器</a>
+									</li>
+									<li>
+										<a href="#">温控</a>
+									</li>
+									<li>
+										<a href="#">恒温</a>
+									</li>
+									<li>
+										<a href="#">小厨宝</a>
+									</li>
+									<li>
+										<a href="#">太阳能</a>
+									</li>
+									<li>
+										<a href="#">即热式</a>
+									</li>
+									<li>
+										<a href="#">空气能</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>中式厨房</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">净水器</a>
+									</li>
+									<li>
+										<a href="#">电饭煲</a>
+									</li>
+									<li>
+										<a href="#">豆浆机</a>
+									</li>
+									<li>
+										<a href="#">电热水壶</a>
+									</li>
+									<li>
+										<a href="#">电压力锅</a>
+									</li>
+									<li>
+										<a href="#">电磁炉</a>
+									</li>
+									<li>
+										<a href="#">养生壶</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>西式厨房</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">烤箱</a>
+									</li>
+									<li>
+										<a href="#">料理机</a>
+									</li>
+									<li>
+										<a href="#">微波炉</a>
+									</li>
+									<li>
+										<a href="#">榨汁机</a>
+									</li>
+									<li>
+										<a href="#">原汁机</a>
+									</li>
+									<li>
+										<a href="#">面包机</a>
+									</li>
+									<li>
+										<a href="#">咖啡机</a>
+									</li>
+									<li>
+										<a href="#">电炸锅</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>生活电器</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">扫地机器人</a>
+									</li>
+									<li>
+										<a href="#">空气净化器</a>
+									</li>
+									<li>
+										<a href="#">吸尘器</a>
+									</li>
+									<li>
+										<a href="#">除湿机</a>
+									</li>
+									<li>
+										<a href="#">取暖器</a>
+									</li>
+									<li>
+										<a href="#">挂烫机</a>
+									</li>
+									<li>
+										<a href="#">干洗机</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>个人健康</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">剃须刀</a>
+									</li>
+									<li>
+										<a href="#">吹风机</a>
+									</li>
+									<li>
+										<a href="#">电动牙刷</a>
+									</li>
+									<li>
+										<a href="#">体重秤</a>
+									</li>
+									<li>
+										<a href="#">理发器</a>
+									</li>
+									<li>
+										<a href="#">足浴器</a>
+									</li>
+									<li>
+										<a href="#">按摩椅</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>精品推荐</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">脱毛器</a>
+									</li>
+									<li>
+										<a href="#">吊扇</a>
+									</li>
+									<li>
+										<a href="#">冰淇淋机</a>
+									</li>
+									<li>
+										<a href="#">碎冰机</a>
+									</li>
+									<li>
+										<a href="#">空调扇</a>
+									</li>
+									<li>
+										<a href="#">瘦身带</a>
+									</li>
+									<li>
+										<a href="#">冷饮机</a>
+									</li>
+									<li>
+										<a href="#">炒冰机</a>
+									</li>
+								</ul>
+							</li>
+						</ol>
+						<div class="banner-list-brand clear" id="displayBig">
+							<ul>
+								<li>
+									<a href="#"><img src="img/jd1.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jd2.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jd3.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jd4.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jd5.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jd6.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jd7.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jd8.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jd9.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jd10.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jd11.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jd12.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jd13.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jd14.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jd15.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jd16.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jd17.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</li>
+					<li>
+						<i class="iconfont">&#xe600;</i>
+						<a href="#">家具建材</a>
+						<div class="banner-nz-wrap clear">
+						<ol class="banner-nz-list clear">
+							<li>
+								<h3>成套家具</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">客厅成套家具</a>
+									</li>
+									<li>
+										<a href="#">餐厅成套家具</a>
+									</li>
+									<li>
+										<a href="#">我是成套家具</a>
+									</li>
+									<li>
+										<a href="#">儿童成套家具</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>客厅餐厅</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">沙发</a>
+									</li>
+									<li>
+										<a href="#">布艺沙发</a>
+									</li>
+									<li>
+										<a href="#">皮艺沙发</a>
+									</li>
+									<li>
+										<a href="#">实木沙发</a>
+									</li>
+									<li>
+										<a href="#">懒人沙发</a>
+									</li>
+									<li>
+										<a href="#">电视柜</a>
+									</li>
+									<li>
+										<a href="#">茶几</a>
+									</li>
+									<li>
+										<a href="#">鞋柜</a>
+									</li>
+									<li>
+										<a href="#">单人沙发</a>
+									</li>
+									<li>
+										<a href="#">餐桌</a>
+									</li>
+									<li>
+										<a href="#">餐椅</a>
+									</li>
+									<li>
+										<a href="#">酒柜</a>
+									</li>
+									<li>
+										<a href="#">餐边柜</a>
+									</li>
+									<li>
+										<a href="#">吧台</a>
+									</li>
+									<li>
+										<a href="#">玄关柜</a>
+									</li>
+									<li>
+										<a href="#">边机</a>
+									</li>
+									
+								</ul>
+							</li>
+							<li>
+								<h3>卧室家具</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">床</a>
+									</li>
+									<li>
+										<a href="#">衣柜</a>
+									</li>
+									<li>
+										<a href="#">床垫</a>
+									</li>
+									<li>
+										<a href="#">简易木柜</a>
+									</li>
+									<li>
+										<a href="#">乳胶床垫</a>
+									</li>
+									<li>
+										<a href="#">弹簧床垫</a>
+									</li>
+									<li>
+										<a href="#">棕床垫</a>
+									</li>
+									<li>
+										<a href="#">实木床</a>
+									</li>
+									<li>
+										<a href="#">双人床</a>
+									</li>
+								</ul>
+							</li>
+								<li>
+								<h3>书房儿童</h3>
+								<ul class="banner-nz-content  clear">
+									<li>
+										<a href="#">电脑桌</a>
+									</li>
+									<li>
+										<a href="#">电脑椅</a>
+									</li>
+									<li>
+										<a href="#">书桌</a>
+									</li>
+									<li>
+										<a href="#">办公桌</a>
+									</li>
+									<li>
+										<a href="#">书架</a>
+									</li>
+									<li>
+										<a href="#">书柜</a>
+									</li>
+									<li>
+										<a href="#">连体书卓柜</a>
+									</li>
+									<li>
+										<a href="#">折叠床/椅</a>
+									</li>
+									<li>
+										<a href="#">花架</a>
+									</li>
+									<li>
+										<a href="#">儿童床</a>
+									</li>
+									<li>
+										<a href="#">高低床</a>
+									</li>
+									<li>
+										<a href="#">儿童床垫</a>
+									</li>
+									<li>
+										<a href="#">儿童沙发</a>
+									</li>
+									<li>
+										<a href="#">儿童椅</a>
+									</li>
+									<li>
+										<a href="#">儿童学习桌</a>
+									</li>
+									<li>
+										<a href="#">儿童衣柜</a>
+									</li>
+									
+								</ul>
+							</li>
+								<li>
+								<h3>家装主材</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">强化复合地板</a>
+									</li>
+									<li>
+										<a href="#">瓷砖</a>
+									</li>
+									<li>
+										<a href="#">墙纸</a>
+									</li>
+									<li>
+										<a href="#">涂料</a>
+									</li>
+									<li>
+										<a href="#">瓷砖背景墙</a>
+									</li>
+									<li>
+										<a href="#">油漆</a>
+									</li>
+									<li>
+										<a href="#">地板</a>
+									</li>
+									<li>
+										<a href="#">硅藻泥</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>厨房卫浴</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">浴霸</a>
+									</li>
+									<li>
+										<a href="#">集成吊顶</a>
+									</li>
+									<li>
+										<a href="#">马桶</a>
+									</li>
+									<li>
+										<a href="#">木鱼花洒套装</a>
+									</li>
+									<li>
+										<a href="#">浴室柜组合</a>
+									</li>
+									<li>
+										<a href="#">水槽套餐</a>
+									</li>
+									<li>
+										<a href="#">智能马桶盖</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>灯饰照明</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">吸顶灯</a>
+									</li>
+									<li>
+										<a href="#">吊灯</a>
+									</li>
+									<li>
+										<a href="#">水晶吊灯</a>
+									</li>
+									<li>
+										<a href="#">筒灯</a>
+									</li>
+									<li>
+										<a href="#">射灯</a>
+									</li>
+									<li>
+										<a href="#">灯带</a>
+									</li>
+									<li>
+										<a href="#">灯泡</a>
+									</li>
+									<li>
+										<a href="#">壁灯</a>
+									</li>
+									<li>
+										<a href="#">灯具套餐</a>
+									</li>
+									<li>
+										<a href="#">铜灯</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>五金工具</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">接线板</a>
+									</li>
+									<li>
+										<a href="#">开关插座</a>
+									</li>
+									<li>
+										<a href="#">USB插座</a>
+									</li>
+									<li>
+										<a href="#">指纹锁</a>
+									</li>
+									<li>
+										<a href="#">工具箱</a>
+									</li>
+									<li>
+										<a href="#">监控摄像头</a>
+									</li>
+									<li>
+										<a href="#">门锁</a>
+									</li>
+									<li>
+										<a href="#">拉手</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>金属定制</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">全握定制</a>
+									</li>
+									<li>
+										<a href="#">定制橱柜</a>
+									</li>
+									<li>
+										<a href="#">定制衣柜</a>
+									</li>
+									<li>
+										<a href="#">门</a>
+									</li>
+									<li>
+										<a href="#">木门</a>
+									</li>
+									<li>
+										<a href="#">榻榻米</a>
+									</li>
+									<li>
+										<a href="#">门窗</a>
+									</li>
+									<li>
+										<a href="#">特权定金</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>装修设计</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">装修特权</a>
+									</li>
+									<li>
+										<a href="#">全包</a>
+									</li>
+									<li>
+										<a href="#">半包</a>
+									</li>
+									<li>
+										<a href="#">拎包入住</a>
+									</li>
+									<li>
+										<a href="#">局部装修</a>
+									</li>
+									<li>
+										<a href="#">设计</a>
+									</li>
+									<li>
+										<a href="#">软装配饰</a>
+									</li>
+									<li>
+										<a href="#">监理</a>
+									</li>
+								</ul>
+							</li>
+						</ol>
+						<div class="banner-list-brand clear">
+							<ul>
+								<li>
+									<a href="#"><img src="img/jj1.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jj2.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jj3.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jj4.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jj5.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jj6.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jj7.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jj8.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jj9.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jj10.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jj11.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jj12.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jj13.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jj14.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jj15.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jj16.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</li>
+					<li>
+						<i class="iconfont">&#xe61c;</i>
+						<a href="#">汽车/配件/用品</a>
+						<div class="banner-nz-wrap clear">
+						<ol class="banner-nz-list clear">
+							<li>
+								<h3>整车</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">首付一成开新车</a>
+									</li>
+									<li>
+										<a href="#">超级试驾</a>
+									</li>
+									<li>
+										<a href="#">定金购车</a>
+									</li>
+									<li>
+										<a href="#">新能源汽车</a>
+									</li>
+									<li>
+										<a href="#">轿车</a>
+									</li>
+									<li>
+										<a href="#">SUV</a>
+									</li>
+									<li>
+										<a href="#">MPV</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>坐垫脚垫</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">秋冬坐垫</a>
+									</li>
+									<li>
+										<a href="#">汽车脚垫</a>
+									</li>
+									<li>
+										<a href="#">专用坐垫</a>
+									</li>
+									<li>
+										<a href="#">专用座套</a>
+									</li>
+									<li>
+										<a href="#">女性坐垫</a>
+									</li>
+									<li>
+										<a href="#">通用坐垫</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>机油轮胎</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">全合成机油</a>
+									</li>
+									<li>
+										<a href="#">半合成机油</a>
+									</li>
+									<li>
+										<a href="#">矿物质机油</a>
+									</li>
+									<li>
+										<a href="#">汽车轮胎</a>
+									</li>
+									<li>
+										<a href="#">雪地胎</a>
+									</li>
+									<li>
+										<a href="#">防爆胎</a>
+									</li>
+								</ul>
+							</li>
+								<li>
+								<h3>电子导航</h3>
+								<ul class="banner-nz-content  clear">
+									<li>
+										<a href="#">行车记录仪</a>
+									</li>
+									<li>
+										<a href="#">安全预警仪</a>
+									</li>
+									<li>
+										<a href="#">后视镜导航</a>
+									</li>
+									<li>
+										<a href="#">车载导航</a>
+									</li>
+									<li>
+										<a href="#">便携式导航</a>
+									</li>
+									<li>
+										<a href="#">GPS定位</a>
+									</li>
+								</ul>
+							</li>
+								<li>
+								<h3>维修保养</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">雨刮器</a>
+									</li>
+									<li>
+										<a href="#">空调滤芯</a>
+									</li>
+									<li>
+										<a href="#">机油滤芯</a>
+									</li>
+									<li>
+										<a href="#">刹车片</a>
+									</li>
+									<li>
+										<a href="#">火花塞</a>
+									</li>
+									<li>
+										<a href="#">汽车电瓶</a>
+									</li>
+									<li>
+										<a href="#">大灯总成</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>车载电器</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">空气净化器</a>
+									</li>
+									<li>
+										<a href="#">吸尘器</a>
+									</li>
+									<li>
+										<a href="#">车载冷暖箱</a>
+									</li>
+									<li>
+										<a href="#">车载MP3</a>
+									</li>
+									<li>
+										<a href="#">逆变器</a>
+									</li>
+									<li>
+										<a href="#">手电充电器</a>
+									</li>
+									<li>
+										<a href="#">一拖三</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>美容清洗</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">洗车机</a>
+									</li>
+									<li>
+										<a href="#">水枪</a>
+									</li>
+									<li>
+										<a href="#">车蜡</a>
+									</li>
+									<li>
+										<a href="#">底盘装甲</a>
+									</li>
+									<li>
+										<a href="#">镀品</a>
+									</li>
+									<li>
+										<a href="#">汽油添加剂</a>
+									</li>
+									<li>
+										<a href="#">玻璃水</a>
+									</li>
+									<li>
+										<a href="#">补漆笔</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>汽车装饰</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">香水</a>
+									</li>
+									<li>
+										<a href="#">挂件</a>
+									</li>
+									<li>
+										<a href="#">手机支架</a>
+									</li>
+									<li>
+										<a href="#">摆件</a>
+									</li>
+									<li>
+										<a href="#">方向盘套</a>
+									</li>
+									<li>
+										<a href="#">充气泵</a>
+									</li>
+									<li>
+										<a href="#">安全锤</a>
+									</li>
+									<li>
+										<a href="#">应急工具</a>
+									</li>
+									<li>
+										<a href="#">应急电源</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>安全自驾</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">安全座椅</a>
+									</li>
+									<li>
+										<a href="#">车载提篮</a>
+									</li>
+									<li>
+										<a href="#">轮胎报警器</a>
+									</li>
+									<li>
+										<a href="#">充气泵</a>
+									</li>
+									<li>
+										<a href="#">安全锤</a>
+									</li>
+									<li>
+										<a href="#">头枕</a>
+									</li>
+									<li>
+										<a href="#">尾箱垫</a>
+									</li>
+									<li>
+										<a href="#">车震床</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>外饰改装</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">汽车贴膜</a>
+									</li>
+									<li>
+										<a href="#">装饰灯</a>
+									</li>
+									<li>
+										<a href="#">改色膜</a>
+									</li>
+									<li>
+										<a href="#">脚踏板</a>
+									</li>
+									<li>
+										<a href="#">车顶架</a>
+									</li>
+									<li>
+										<a href="#">汽车车衣</a>
+									</li>
+									<li>
+										<a href="#">车顶箱</a>
+									</li>
+									<li>
+										<a href="#">装饰条</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>汽车服务</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">天猫养车</a>
+									</li>
+									<li>
+										<a href="#">加油卡</a>
+									</li>
+									<li>
+										<a href="#">4S保养</a>
+									</li>
+									<li>
+										<a href="#">上门保养</a>
+									</li>
+									<li>
+										<a href="#">连锁保养</a>
+									</li>
+									<li>
+										<a href="#">镀晶服务</a>
+									</li>
+									<li>
+										<a href="#">打蜡服务</a>
+									</li>
+								</ul>
+							</li>
+						</ol>
+						<div class="banner-list-brand clear">
+							<ul>
+								<li>
+									<a href="#"><img src="img/qc1.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/qc2.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/qc3.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/qc4.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/qc5.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/qc6.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/qc7.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/qc8.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/qc9.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/qc10.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/qc11.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/qc12.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/qc13.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/qc14.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/qc15.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/qc16.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</li>
+					<li>
+						<i class="iconfont">&#xe77d;</i>
+						<a href="#">家纺/家饰/鲜花</a>
+						<div class="banner-nz-wrap clear">
+						<ol class="banner-nz-list clear">
+							<li>
+								<h3>床上用品</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">四件套</a>
+									</li>
+									<li>
+										<a href="#">枕头</a>
+									</li>
+									<li>
+										<a href="#">枕芯</a>
+									</li>
+									<li>
+										<a href="#">床单</a>
+									</li>
+									<li>
+										<a href="#">被子</a>
+									</li>
+									<li>
+										<a href="#">针织棉四件套</a>
+									</li>
+									<li>
+										<a href="#">床帘</a>
+									</li>
+									<li>
+										<a href="#">枕套</a>
+									</li>
+									<li>
+										<a href="#">真丝枕套</a>
+									</li>
+									<li>
+										<a href="#">枕巾</a>
+									</li>
+									<li>
+										<a href="#">毯子</a>
+									</li>
+									<li>
+										<a href="#">毛巾毯</a>
+									</li>
+									<li>
+										<a href="#">乳胶枕</a>
+									</li>
+									<li>
+										<a href="#">颈椎枕</a>
+									</li>
+									<li>
+										<a href="#">U型枕</a>
+									</li>
+									<li>
+										<a href="#">记忆枕</a>
+									</li>
+									<li>
+										<a href="#">婚庆床品</a>
+									</li>
+									<li>
+										<a href="#">儿童床品</a>
+									</li>
+									<li>
+										<a href="#">床罩</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>居家布艺</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">窗帘</a>
+									</li>
+									<li>
+										<a href="#">遮光窗帘</a>
+									</li>
+									<li>
+										<a href="#">成品窗帘</a>
+									</li>
+									<li>
+										<a href="#">进口地毯</a>
+									</li>
+									<li>
+										<a href="#">客厅地毯</a>
+									</li>
+									<li>
+										<a href="#">卧室地毯</a>
+									</li>
+									<li>
+										<a href="#">沙发套</a>
+									</li>
+									<li>
+										<a href="#">沙发巾</a>
+									</li>
+									<li>
+										<a href="#">家居拖鞋</a>
+									</li>
+									<li>
+										<a href="#">女士棉拖</a>
+									</li>
+									<li>
+										<a href="#">情侣拖鞋</a>
+									</li>
+									<li>
+										<a href="#">毛巾</a>
+									</li>
+									<li>
+										<a href="#">纯棉毛巾</a>
+									</li>
+									<li>
+										<a href="#">浴袍</a>
+									</li>
+									<li>
+										<a href="#">地垫</a>
+									</li>
+									<li>
+										<a href="#">防滑地垫</a>
+									</li>
+									<li>
+										<a href="#">儿童泡沫地垫</a>
+									</li>
+									<li>
+										<a href="#">抱枕</a>
+									</li>
+									<li>
+										<a href="#">靠垫</a>
+									</li>
+									<li>
+										<a href="#">坐垫</a>
+									</li>
+									<li>
+										<a href="#">桌布</a>
+									</li>
+									<li>
+										<a href="#">防水桌布</a>
+									</li>
+									<li>
+										<a href="#">餐垫</a>
+									</li>
+									<li>
+										<a href="#">窗帘杆</a>
+									</li>
+									<li>
+										<a href="#">十字绣</a>
+									</li>
+									<li>
+										<a href="#">十字绣抱枕</a>
+									</li>
+									<li>
+										<a href="#">门帘</a>
+									</li>
+									<li>
+										<a href="#">飘窗垫</a>
+									</li>
+									<li>
+										<a href="#">钻石画</a>
+									</li>
+									<li>
+										<a href="#">防尘罩</a>
+									</li>
+									<li>
+										<a href="#">百叶帘</a>
+									</li>
+									
+								</ul>
+							</li>
+							<li>
+								<h3>家居饰品</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">墙贴</a>
+									</li>
+									<li>
+										<a href="#">墙纸自粘</a>
+									</li>
+									<li>
+										<a href="#">3d立体墙贴</a>
+									</li>
+									<li>
+										<a href="#">花瓶</a>
+									</li>
+									<li>
+										<a href="#">摆件</a>
+									</li>
+									<li>
+										<a href="#">相框</a>
+									</li>
+									<li>
+										<a href="#">装饰画</a>
+									</li>
+									<li>
+										<a href="#">电视背景墙</a>
+									</li>
+									<li>
+										<a href="#">仿真花</a>
+									</li>
+									<li>
+										<a href="#">闹钟</a>
+									</li>
+									<li>
+										<a href="#">玻璃贴花</a>
+									</li>
+									<li>
+										<a href="#">结婚礼物</a>
+									</li>
+									<li>
+										<a href="#">香薰炉</a>
+									</li>
+									<li>
+										<a href="#">电表箱装饰画</a>
+									</li>
+									<li>
+										<a href="#">招财猫</a>
+									</li>
+									<li>
+										<a href="#">雕刻工艺</a>
+									</li>
+									<li>
+										<a href="#">果盘</a>
+									</li>
+									<li>
+										<a href="#">数字油画</a>
+									</li>
+									<li>
+										<a href="#">玻璃花瓶</a>
+									</li>
+									<li>
+										<a href="#">冰箱贴</a>
+									</li>
+									<li>
+										<a href="#">首饰盒</a>
+									</li>
+									<li>
+										<a href="#">壁饰</a>
+									</li>
+									
+								</ul>
+							</li>
+								<li>
+								<h3>鲜花绿植</h3>
+								<ul class="banner-nz-content  clear">
+									<li>
+										<a href="#">红玫瑰</a>
+									</li>
+									<li>
+										<a href="#">香槟玫瑰</a>
+									</li>
+									<li>
+										<a href="#">百合</a>
+									</li>
+									<li>
+										<a href="#">永生花</a>
+									</li>
+									<li>
+										<a href="#">萌多肉</a>
+									</li>
+									<li>
+										<a href="#">绿盆植物</a>
+									</li>
+									<li>
+										<a href="#">表白送花</a>
+									</li>
+									<li>
+										<a href="#">康乃馨</a>
+									</li>
+									<li>
+										<a href="#">花束混搭</a>
+									</li>
+									<li>
+										<a href="#">进口玫瑰</a>
+									</li>
+									<li>
+										<a href="#">多肉植物</a>
+									</li>
+									<li>
+										<a href="#">微景观</a>
+									</li>
+									<li>
+										<a href="#">仿真花绢花</a>
+									</li>
+									<li>
+										<a href="#">情人节送花</a>
+									</li>
+									<li>
+										<a href="#">生日送花</a>
+									</li>
+									<li>
+										<a href="#">鲜花礼盒</a>
+									</li>
+									<li>
+										<a href="#">多肉花盆</a>
+									</li>
+									<li>
+										<a href="#">室内植物</a>
+									</li>
+									<li>
+										<a href="#">园艺工具</a>
+									</li>
+									<li>
+										<a href="#">绿萝盆栽</a>
+									</li>
+									<li>
+										<a href="#">干花装饰</a>
+									</li>
+									
+								</ul>
+							</li>
+								
+						</ol>
+						<div class="banner-list-brand clear">
+							<ul>
+								<li>
+									<a href="#"><img src="img/jf1.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jf2.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jf3.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jf4.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jf5.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jf6.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jf7.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jf8.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jf9.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jf10.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jf11.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jf12.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jf13.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jf14.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jf15.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/jf16.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</li>
+					<li>
+						<i class="iconfont">&#xe650;</i>
+						<a href="#">医药保健</a>
+						<div class="banner-nz-wrap clear">
+						<ol class="banner-nz-list clear">
+							<li>
+								<h3>保健品</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">保健食品</a>
+									</li>
+									<li>
+										<a href="#">缓解体力疲劳</a>
+									</li>
+									<li>
+										<a href="#">辅助降血糖</a>
+									</li>
+									<li>
+										<a href="#">增加骨密度</a>
+									</li>
+									<li>
+										<a href="#">护肝</a>
+									</li>
+									<li>
+										<a href="#">减肥</a>
+									</li>
+									<li>
+										<a href="#">通便</a>
+									</li>
+									<li>
+										<a href="#">抗氧化</a>
+									</li>
+									<li>
+										<a href="#">改善睡眠</a>
+									</li>
+									<li>
+										<a href="#">祛黄褐斑</a>
+									</li>
+									<li>
+										<a href="#">减肥茶</a>
+									</li>
+									<li>
+										<a href="#">酵素</a>
+									</li>
+									<li>
+										<a href="#">左旋肉碱</a>
+									</li>
+									<li>
+										<a href="#">增肌粉</a>
+									</li>
+									<li>
+										<a href="#">安神补脑</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>滋补品</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">滋补养生</a>
+									</li>
+									<li>
+										<a href="#">蜂蜜</a>
+									</li>
+									<li>
+										<a href="#">石斛</a>
+									</li>
+									<li>
+										<a href="#">阿胶</a>
+									</li>
+									<li>
+										<a href="#">黑枸杞</a>
+									</li>
+									<li>
+										<a href="#">冬虫夏草</a>
+									</li>
+									<li>
+										<a href="#">青钱柳</a>
+									</li>
+									<li>
+										<a href="#">西洋参</a>
+									</li>
+									<li>
+										<a href="#">人参</a>
+									</li>
+									<li>
+										<a href="#">藏红花</a>
+									</li>
+									<li>
+										<a href="#">蜂胶</a>
+									</li>
+									<li>
+										<a href="#">阿胶糕</a>
+									</li>
+									<li>
+										<a href="#">灵芝孢子粉</a>
+									</li>
+									<li>
+										<a href="#">黄芪</a>
+									</li>
+									<li>
+										<a href="#">阿胶块</a>
+									</li>
+									<li>
+										<a href="#">燕窝</a>
+									</li>
+									<li>
+										<a href="#">铁皮枫斗</a>
+									</li>
+									<li>
+										<a href="#">三七粉</a>
+									</li>
+									<li>
+										<a href="#">蜂王浆</a>
+									</li>
+									<li>
+										<a href="#">雪蛤</a>
+									</li>
+									<li>
+										<a href="#">四物汤</a>
+									</li>
+									<li>
+										<a href="#">山药</a>
+									</li>
+									<li>
+										<a href="#">牛蒡茶</a>
+									</li>
+									<li>
+										<a href="#">虫草</a>
+									</li>
+									<li>
+										<a href="#">当归</a>
+									</li>
+									<li>
+										<a href="#">鹿茸</a>
+									</li>
+									<li>
+										<a href="#">固元膏</a>
+									</li>
+									
+								</ul>
+							</li>
+							<li>
+								<h3>医药</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">感冒咳嗽</a>
+									</li>
+									<li>
+										<a href="#">腰腿疼痛</a>
+									</li>
+									<li>
+										<a href="#">妇科用药</a>
+									</li>
+									<li>
+										<a href="#">男科用药</a>
+									</li>
+									<li>
+										<a href="#">体检套餐</a>
+									</li>
+									<li>
+										<a href="#">血糖仪</a>
+									</li>
+									<li>
+										<a href="#">保健理疗</a>
+									</li>
+									<li>
+										<a href="#">针灸拔罐</a>
+									</li>
+									<li>
+										<a href="#">成人用品</a>
+									</li>
+									<li>
+										<a href="#">男用延时</a>
+									</li>
+									<li>
+										<a href="#">女用情趣</a>
+									</li>
+									<li>
+										<a href="#">避孕套</a>
+									</li>
+									<li>
+										<a href="#">润滑剂</a>
+									</li>
+									<li>
+										<a href="#">情趣跳蛋</a>
+									</li>
+									<li>
+										<a href="#">飞机杯</a>
+									</li>
+									<li>
+										<a href="#">缩阴球</a>
+									</li>
+									<li>
+										<a href="#">振动棒</a>
+									</li>
+									<li>
+										<a href="#">肾宝片</a>
+									</li>
+									<li>
+										<a href="#">阳痿早泄</a>
+									</li>
+									<li>
+										<a href="#">伟哥</a>
+									</li>
+									<li>
+										<a href="#">肝炎</a>
+									</li>
+									<li>
+										<a href="#">皮炎湿疹</a>
+									</li>
+									
+								</ul>
+							</li>
+								<li>
+								<h3>医疗器械</h3>
+								<ul class="banner-nz-content  clear">
+									<li>
+										<a href="#">制氧机</a>
+									</li>
+									<li>
+										<a href="#">体温计</a>
+									</li>
+									<li>
+										<a href="#">轮椅</a>
+									</li>
+									<li>
+										<a href="#">胎心仪</a>
+									</li>
+									<li>
+										<a href="#">理疗仪</a>
+									</li>
+									<li>
+										<a href="#">助听器</a>
+									</li>
+									<li>
+										<a href="#">雾化器</a>
+									</li>
+									<li>
+										<a href="#">呼吸机</a>
+									</li>
+									<li>
+										<a href="#">拔罐器</a>
+									</li>
+									<li>
+										<a href="#">口罩</a>
+									</li>
+									<li>
+										<a href="#">血压计</a>
+									</li>
+									<li>
+										<a href="#">创口贴</a>
+									</li>
+									<li>
+										<a href="#">护具</a>
+									</li>
+									<li>
+										<a href="#">导尿袋</a>
+									</li>
+									<li>
+										<a href="#">血糖仪</a>
+									</li>
+									<li>
+										<a href="#">针灸用品</a>
+									</li>
+									<li>
+										<a href="#">护理床</a>
+									</li>
+									<li>
+										<a href="#">褥疮垫</a>
+									</li>
+									<li>
+										<a href="#">家用器械</a>
+									</li>
+									<li>
+										<a href="#">按摩器材</a>
+									</li>
+									<li>
+										<a href="#">吸痰器</a>
+									</li>
+									<li>
+										<a href="#">坐便椅</a>
+									</li>
+									<li>
+										<a href="#">血氧仪</a>
+									</li>
+									<li>
+										<a href="#">颈椎治疗仪</a>
+									</li>
+									<li>
+										<a href="#">刮痧</a>
+									</li>
+									<li>
+										<a href="#">洗鼻器</a>
+									</li>
+									
+								</ul>
+							</li>
+								<li>
+								<h3>隐形眼镜</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">强生美瞳</a>
+									</li>
+									<li>
+										<a href="#">博士伦</a>
+									</li>
+									<li>
+										<a href="#">海昌</a>
+									</li>
+									<li>
+										<a href="#">卫康</a>
+									</li>
+									<li>
+										<a href="#">爱尔康</a>
+									</li>
+									<li>
+										<a href="#">视康</a>
+									</li>
+									<li>
+										<a href="#">实瞳</a>
+									</li>
+									<li>
+										<a href="#">日抛</a>
+									</li>
+									<li>
+										<a href="#">两周抛</a>
+									</li>
+									<li>
+										<a href="#">月抛</a>
+									</li>
+									<li>
+										<a href="#">季抛</a>
+									</li>
+
+									<li>
+										<a href="#">半年抛</a>
+									</li>
+									<li>
+										<a href="#">年抛</a>
+									</li>
+									<li>
+										<a href="#">护理液</a>
+									</li>
+									<li>
+										<a href="#">硬镜护理液</a>
+									</li>
+									<li>
+										<a href="#">双氧水</a>
+									</li>
+									<li>
+										<a href="#">润眼液</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>医疗服务</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">爱康国宾</a>
+									</li>
+									<li>
+										<a href="#">慈铭体检</a>
+									</li>
+									<li>
+										<a href="#">瑞慈体检</a>
+									</li>
+									<li>
+										<a href="#">每年大健康</a>
+									</li>
+									<li>
+										<a href="#">和睦美</a>
+									</li>
+									<li>
+										<a href="#">美中宜和</a>
+									</li>
+									<li>
+										<a href="#">月子中心</a>
+									</li>
+									<li>
+										<a href="#">医疗美容</a>
+									</li>
+									<li>
+										<a href="#">玻尿酸注射</a>
+									</li>
+									<li>
+										<a href="#">瘦脸针</a>
+									</li>
+									<li>
+										<a href="#">美容神器</a>
+									</li>
+									<li>
+										<a href="#">美白服务</a>
+									</li>
+									<li>
+										<a href="#">补水服务</a>
+									</li>
+								</ul>
+							</li>
+						</ol>
+						<div class="banner-list-brand clear">
+							<ul>
+								<li>
+									<a href="#"><img src="img/yy1.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/yy2.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/yy3.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/yy4.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/yy5.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/yy6.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/yy7.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/yy8.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/yy9.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/yy10.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/yy11.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/yy12.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/yy13.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/yy14.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/yy15.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/yy16.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/yy17.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/yy18.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</li>
+					<li>
+						<i class="iconfont">&#xe603;</i>
+						<a href="#">厨具/收纳/宠物</a>
+						<div class="banner-nz-wrap clear">
+						<ol class="banner-nz-list clear">
+							<li>
+								<h3>厨房烹饪</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">全球家居厨餐具</a>
+									</li>
+									<li>
+										<a href="#">锅组套装</a>
+									</li>
+									<li>
+										<a href="#">炒锅</a>
+									</li>
+									<li>
+										<a href="#">不粘锅</a>
+									</li>
+									<li>
+										<a href="#">平底锅</a>
+									</li>
+									<li>
+										<a href="#">高压锅</a>
+									</li>
+									<li>
+										<a href="#">奶锅</a>
+									</li>
+									<li>
+										<a href="#">汤锅</a>
+									</li>
+									<li>
+										<a href="#">炖锅</a>
+									</li>
+									<li>
+										<a href="#">砂锅</a>
+									</li>
+									<li>
+										<a href="#">蒸锅</a>
+									</li>
+									<li>
+										<a href="#">烧水壶</a>
+									</li>
+									<li>
+										<a href="#">刀具</a>
+									</li>
+									<li>
+										<a href="#">菜刀</a>
+									</li>
+									<li>
+										<a href="#">水果刀</a>
+									</li>
+									<li>
+										<a href="#">刀架</a>
+									</li>
+									<li>
+										<a href="#">菜板</a>
+									</li>
+									<li>
+										<a href="#">厨房置物架</a>
+									</li>
+									<li>
+										<a href="#">烧烤用具</a>
+									</li>
+									<li>
+										<a href="#">烘焙模具</a>
+									</li>
+									<li>
+										<a href="#">密封罐</a>
+									</li>
+									<li>
+										<a href="#">米桶</a>
+									</li>
+									<li>
+										<a href="#">厨房小工具</a>
+									</li>
+									<li>
+										<a href="#">厨房清洗</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>餐饮具</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">杯具套装</a>
+									</li>
+									<li>
+										<a href="#">保温杯</a>
+									</li>
+									<li>
+										<a href="#">水杯</a>
+									</li>
+									<li>
+										<a href="#">保温壶</a>
+									</li>
+									<li>
+										<a href="#">玻璃杯</a>
+									</li>
+									<li>
+										<a href="#">陶瓷杯</a>
+									</li>
+									<li>
+										<a href="#">茶杯</a>
+									</li>
+									<li>
+										<a href="#">咖啡杯</a>
+									</li>
+									<li>
+										<a href="#">马克杯</a>
+									</li>
+									<li>
+										<a href="#">红酒杯</a>
+									</li>
+									<li>
+										<a href="#">水具套装</a>
+									</li>
+									<li>
+										<a href="#">酒具</a>
+									</li>
+									<li>
+										<a href="#">咖啡具</a>
+									</li>
+									<li>
+										<a href="#">餐具</a>
+									</li>
+									<li>
+										<a href="#">瓷器餐具套装</a>
+									</li>
+									<li>
+										<a href="#">瓷碟套装</a>
+									</li>
+									<li>
+										<a href="#">叉勺筷套装</a>
+									</li>
+									<li>
+										<a href="#">碗</a>
+									</li>
+									<li>
+										<a href="#">筷子</a>
+									</li>
+									<li>
+										<a href="#">茶具套装</a>
+									</li>
+									<li>
+										<a href="#">保温饭盒</a>
+									</li>
+									<li>
+										<a href="#">保鲜盒</a>
+									</li>
+									<li>
+										<a href="#">一次性用品</a>
+									</li>
+									
+								</ul>
+							</li>
+							<li>
+								<h3>居家礼品</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">全球家居</a>
+									</li>
+									<li>
+										<a href="#">雨伞</a>
+									</li>
+									<li>
+										<a href="#">太阳伞</a>
+									</li>
+									<li>
+										<a href="#">雨衣</a>
+									</li>
+									<li>
+										<a href="#">口罩</a>
+									</li>
+									<li>
+										<a href="#">挂钟</a>
+									</li>
+									<li>
+										<a href="#">家用梯</a>
+									</li>
+									<li>
+										<a href="#">缝纫机</a>
+									</li>
+									<li>
+										<a href="#">活性炭</a>
+									</li>
+									<li>
+										<a href="#">创意礼品</a>
+									</li>
+									<li>
+										<a href="#">婚庆用品</a>
+									</li>
+									<li>
+										<a href="#">生日礼物</a>
+									</li>
+									<li>
+										<a href="#">相册</a>
+									</li>
+									<li>
+										<a href="#">劳保用品</a>
+									</li>
+									<li>
+										<a href="#">驱虫</a>
+									</li>
+									
+								</ul>
+							</li>
+								<li>
+								<h3>收纳清洁</h3>
+								<ul class="banner-nz-content  clear">
+									<li>
+										<a href="#">全球家居收纳</a>
+									</li>
+									<li>
+										<a href="#">全球家居清洁</a>
+									</li>
+									<li>
+										<a href="#">晾衣架</a>
+									</li>
+									<li>
+										<a href="#">收纳箱</a>
+									</li>
+									<li>
+										<a href="#">收纳柜</a>
+									</li>
+									<li>
+										<a href="#">鞋柜</a>
+									</li>
+									<li>
+										<a href="#">收纳袋</a>
+									</li>
+									<li>
+										<a href="#">收纳盒</a>
+									</li>
+									<li>
+										<a href="#">化妆包</a>
+									</li>
+									<li>
+										<a href="#">旅行收纳</a>
+									</li>
+									<li>
+										<a href="#">衣服防尘</a>
+									</li>
+									<li>
+										<a href="#">脏衣篮</a>
+									</li>
+									<li>
+										<a href="#">压缩袋</a>
+									</li>
+									<li>
+										<a href="#">收纳架</a>
+									</li>
+									<li>
+										<a href="#">置物架</a>
+									</li>
+									<li>
+										<a href="#">旋转拖把</a>
+									</li>
+									<li>
+										<a href="#">平板拖把</a>
+									</li>
+									<li>
+										<a href="#">胶棉拖把</a>
+									</li>
+									<li>
+										<a href="#">垃圾桶</a>
+									</li>
+									<li>
+										<a href="#">垃圾袋</a>
+									</li>
+									<li>
+										<a href="#">置物架</a>
+									</li>
+									<li>
+										<a href="#">浴帘</a>
+									</li>
+									<li>
+										<a href="#">梳子</a>
+									</li>
+									
+								</ul>
+							</li>
+								<li>
+								<h3>纸品清洁</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">软包抽纸</a>
+									</li>
+									<li>
+										<a href="#">卷筒纸</a>
+									</li>
+									<li>
+										<a href="#">手帕纸</a>
+									</li>
+									<li>
+										<a href="#">厨房用纸</a>
+									</li>
+									<li>
+										<a href="#">湿厕纸</a>
+									</li>
+									<li>
+										<a href="#">湿巾纸</a>
+									</li>
+									<li>
+										<a href="#">洗衣液</a>
+									</li>
+									<li>
+										<a href="#">衣物除菌液</a>
+									</li>
+									<li>
+										<a href="#">消毒液</a>
+									</li>
+									<li>
+										<a href="#">洗洁精</a>
+									</li>
+									<li>
+										<a href="#">油污净</a>
+									</li>
+									<li>
+										<a href="#">洁厕剂</a>
+									</li>
+									<li>
+										<a href="#">地板清洁</a>
+									</li>
+									<li>
+										<a href="#">管道疏通</a>
+									</li>
+									<li>
+										<a href="#">家私清洁</a>
+									</li>
+									<li>
+										<a href="#">玻璃清洁</a>
+									</li>
+									<li>
+										<a href="#">驱蚊驱虫</a>
+									</li>
+									<li>
+										<a href="#">初湿防潮</a>
+									</li>
+									<li>
+										<a href="#">除甲醛</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>宠物用品</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">全球家居宠物</a>
+									</li>
+									<li>
+										<a href="#">狗粮</a>
+									</li>
+									<li>
+										<a href="#">猫粮</a>
+									</li>
+									<li>
+										<a href="#">狗零食</a>
+									</li>
+									<li>
+										<a href="#">猫零食</a>
+									</li>
+									<li>
+										<a href="#">窝/笼</a>
+									</li>
+									<li>
+										<a href="#">宠物服饰</a>
+									</li>
+									<li>
+										<a href="#">鱼缸</a>
+									</li>
+									<li>
+										<a href="#">水族世界</a>
+									</li>
+									<li>
+										<a href="#">牵引带</a>
+									</li>
+									<li>
+										<a href="#">医疗保健</a>
+									</li>
+									<li>
+										<a href="#">宠物玩具</a>
+									</li>
+									<li>
+										<a href="#">猫砂</a>
+									</li>
+									<li>
+										<a href="#">生活用品</a>
+									</li>
+								</ul>
+							</li>
+						</ol>
+						<div class="banner-list-brand clear">
+							<ul>
+								<li>
+									<a href="#"><img src="img/cj1.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/cj2.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/cj3.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/cj4.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/cj5.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/cj6.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/cj7.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/cj8.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/cj9.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/cj10.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/cj11.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/cj12.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/cj13.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/cj14.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/cj15.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/cj16.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</li>
+					<li class="clear" >
+						<i class="iconfont">&#xe625;</i>
+						<a href="#">图书音像</a>
+						<div class="banner-nz-wrap clear">
+						<ol class="banner-nz-list clear">
+							<li class="clear" >
+								<h3>儿童读物</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">畅销童书</a>
+									</li>
+									<li>
+										<a href="#">绘本</a>
+									</li>
+									<li>
+										<a href="#">儿童文学</a>
+									</li>
+									<li>
+										<a href="#">启蒙认知</a>
+									</li>
+									<li>
+										<a href="#">益智游戏</a>
+									</li>
+									<li>
+										<a href="#">幼儿科普</a>
+									</li>
+									<li>
+										<a href="#">童话书</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>畅销小说</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">都市情感</a>
+									</li>
+									<li>
+										<a href="#">穿越架空</a>
+									</li>
+									<li>
+										<a href="#">畅销小说</a>
+									</li>
+									<li>
+										<a href="#">外国文学</a>
+									</li>
+									<li>
+										<a href="#">科幻小说</a>
+									</li>
+									<li>
+										<a href="#">影视同期</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>文学文艺</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">畅销书</a>
+									</li>
+									<li>
+										<a href="#">散文随笔</a>
+									</li>
+									<li>
+										<a href="#">文学</a>
+									</li>
+									<li>
+										<a href="#">传记</a>
+									</li>
+									<li>
+										<a href="#">涂色</a>
+									</li>
+									<li>
+										<a href="#">字帖</a>
+									</li>
+									<li>
+										<a href="#">现当代文学</a>
+									</li>
+									<li>
+										<a href="#">诺贝尔</a>
+									</li>
+									<li>
+										<a href="#">色铅笔</a>
+									</li>
+								</ul>
+							</li>
+								<li>
+								<h3>社科生活</h3>
+								<ul class="banner-nz-content  clear">
+									<li>
+										<a href="#">烘焙</a>
+									</li>
+									<li>
+										<a href="#">旅游</a>
+									</li>
+									<li>
+										<a href="#">菜谱</a>
+									</li>
+									<li>
+										<a href="#">美容/美体</a>
+									</li>
+									<li>
+										<a href="#">时尚</a>
+									</li>
+									<li>
+										<a href="#">家居装修</a>
+									</li>
+									<li>
+										<a href="#">两性健康</a>
+									</li>
+									<li>
+										<a href="#">两性</a>
+									</li>
+									<li>
+										<a href="#">减肥</a>
+									</li>
+								</ul>
+							</li>
+								<li>
+								<h3>育儿百科</h3>
+								<ul class="banner-nz-content clear">
+									<li>
+										<a href="#">家庭教育</a>
+									</li>
+									<li>
+										<a href="#">幼儿情绪管理</a>
+									</li>
+									<li>
+										<a href="#">能力培养</a>
+									</li>
+									<li>
+										<a href="#">胎教</a>
+									</li>
+									<li>
+										<a href="#">幼儿心理</a>
+									</li>
+									<li>
+										<a href="#">孕产妇保健</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>学校考试</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">公务员</a>
+									</li>
+									<li>
+										<a href="#">托福</a>
+									</li>
+									<li>
+										<a href="#">职称英语</a>
+									</li>
+									<li>
+										<a href="#">建造师考试</a>
+									</li>
+									<li>
+										<a href="#">注册会计师</a>
+									</li>
+									<li>
+										<a href="#">四六级英语</a>
+									</li>
+									<li>
+										<a href="#">考研</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>教材教辅</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">中学教辅</a>
+									</li>
+									<li>
+										<a href="#">新课标</a>
+									</li>
+									<li>
+										<a href="#">中小学作文</a>
+									</li>
+									<li>
+										<a href="#">本科/研究生教材</a>
+									</li>
+									<li>
+										<a href="#">高职教材</a>
+									</li>
+									<li>
+										<a href="#">外语学习</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>经管励志</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">管理学</a>
+									</li>
+									<li>
+										<a href="#">金融与投资</a>
+									</li>
+									<li>
+										<a href="#">励志</a>
+									</li>
+									<li>
+										<a href="#">投资与理财</a>
+									</li>
+									<li>
+										<a href="#">金融学</a>
+									</li>
+									<li>
+										<a href="#">股市</a>
+									</li>
+									<li>
+										<a href="#">女性励志</a>
+									</li>
+									<li>
+										<a href="#">营销</a>
+									</li>
+								</ul>
+							</li>
+							<li>
+								<h3>大牌乐器</h3>
+								<ul class="banner-nz-content clear" >
+									<li>
+										<a href="#">乐器</a>
+									</li>
+									<li>
+										<a href="#">钢琴</a>
+									</li>
+									<li>
+										<a href="#">智能钢琴</a>
+									</li>
+									<li>
+										<a href="#">数码钢琴</a>
+									</li>
+									<li>
+										<a href="#">电子琴</a>
+									</li>
+									<li>
+										<a href="#">吉他</a>
+									</li>
+									<li>
+										<a href="#">尤克里里</a>
+									</li>
+									<li>
+										<a href="#">古筝</a>
+									</li>
+									<li>
+										<a href="#">萨克斯风</a>
+									</li>
+									<li>
+										<a href="#">小提琴</a>
+									</li>
+									<li>
+										<a href="#">儿童乐器</a>
+									</li>
+									<li>
+										<a href="#">口琴</a>
+									</li>
+									<li>
+										<a href="#">电吉他</a>
+									</li>
+									<li>
+										<a href="#">民谣吉他</a>
+									</li>
+								</ul>
+							</li>
+						</ol>
+						<div class="banner-list-brand clear">
+							<ul>
+								<li>
+									<a href="#"><img src="img/ts1.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ts2.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ts3.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ts4.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ts5.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ts6.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ts7.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ts8.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ts9.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ts10.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ts11.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ts12.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ts13.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ts14.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ts15.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ts16.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ts17.jpg" alt=""></a>
+								</li>
+								<li>
+									<a href="#"><img src="img/ts18.jpg" alt=""></a>
+								</li>
+							</ul>
+						</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div><!-- banner结束 -->
+	</div>
+	<div class="mainBox">
+		<div class="main clear">
+		<div class="brand clear">
+			<div class="brand-sale">
+				<div class="brand-sale-head">
+					<span class="brand-ch">品牌闪购</span>
+					<span class="brand-eg"> BRAND SALE</span>
+					<a href="#"></a>
+				</div>
+				<img src="img/brand-sale.webp" alt="" width="234" height="316">
+			</div>
+			<div class="brand-channel">
+				<div class="brand-sale-head">
+					<span class="brand-ch">品牌闪购</span>
+					<span class="brand-eg"> BRAND SALE</span>
+					<a  href="#">更多</a>
+				</div>
+				<img src="img/brand-channel.webp" alt="" width="485" height="316">
+			</div>
+			<div class="brand-activity">
+				<div class="brand-sale-head">
+					<span class="brand-ch">品牌闪购</span>
+					<span class="brand-eg"> BRAND SALE</span>
+					<a href="#">更多</a>
+				</div>
+				<img src="img/brand-activity.webp" alt="" width="485" height="316">
+			</div>
+		</div><!-- brand-title结束 -->
+		<div class="brand-content">
+			<ul class="clear">
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content1.webp" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>Simwood</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content2.png" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>JackJones</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content3.png" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>A21</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content4.png" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>七匹狼</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content5.png" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>酷衣购</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content6.png" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>森马</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content7.png" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>与狼共舞</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content8.png" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>回力</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content9.png" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>巴黎欧莱雅</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content10.jpg" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>圣得西</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content11.png" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>千纸鹤</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content12.webp" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>得力</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content13.webp" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>纽曼</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content14.jpg" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>马克华菲</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content15.png" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>太平鸟</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content16.png" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>PLORY</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content17.png" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>adidas</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content18.webp" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>棉先生</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content19.webp" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>妮维雅</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content20.png" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>SELECTED</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content21.png" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>KAMA</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content22.png" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>Dickies</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content23.png" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>Cabbeen</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content24.png" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>GXG</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content25.webp" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>HUAWEI</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content26.png" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>MD</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content27.png" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>Lilbetter</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content28.png" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>海澜之家</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li>
+					<a class="brand-img" href="#"><img src="img/brand-content29.png" alt=""></a>
+					<a class="brand-mask href="#">
+						<div >
+						    <p>小米</p>
+						    <p class="brand-enter">点击进入</p>
+					    </div>
+					</a>
+				</li>
+				<li class="brand-change">
+					<div class="change">
+						<i class="iconfont">&#xe607;</i>
+					</div>
+					
+				    <p>换一批</p>
+				</li>
+			</ul>
+		</div><!-- brand-content结束 -->
+		<div class="tianmao-mart clear">
+			<div class="tianmao-mart-head clear">
+				<img src="img/tianmao-mart.png" alt="" width="214" height="25">
+				<ul class="clear">
+					<li><a href="#">进口零食</a></li>
+					<li><a href="#">食品饮料</a></li>
+					<li><a href="#">粮油副食</a></li>
+					<li><a href="#">美容洗护</a></li>
+					<li><a href="#">家具家电</a></li>
+					<li><a href="#">家庭清洁</a></li>
+					<li><a href="#">母婴用品</a></li>
+					<li><a href="#">生鲜水果</a></li>
+				</ul>
+			</div>
+			<div class="tianmao-mart-content clear">
+				<div class="mart-img mart-img-one">
+					<img src="img/tianmao-mart-ad.jpg" alt="" width="235" height="618">
+					<div class="tianmao-mart-ad-wrap clear">
+						<div class="mart-left-wrap">
+							<span>天猫超市</span>
+						</div>
+						<div class="mart-right-wrap">
+							<span>休闲消暑</span>
+							<span>轻松一夏</span>
+						</div>
+					</div>
+					<div class="mart-more">
+						<img src="img/next-white.png" alt="next-btn" width="32" height="32">
+					</div>
+				</div>
+				<div class="tianmao-mart-list clear">
+					<div class="change-wrap">
+						<div class="tianmao-change">
+							<ul class="clear">
+								<li  id="mart-fq">
+									<a href="#">今日疯抢</a>
+								</li>
+								<li id="mart-lf">
+									<a href="#" >量贩装</a>
+								</li>
+							</ul>
+							<div class="tianmao-change-title">
+								<div>
+									<img src="img/tianmao-change-icon.png" alt="" width="23" height="23">
+									<span class="change-bl">限时限量疯抢</span>
+									<span class="change-des">1元超值疯抢中</span>
+								</div>
+								<img class="change-img" src="img/mart-fq.jpg" alt="" width="242" height="210">
+							</div>
+						</div>
+					</div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/tianmao-mart1.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>MUSCLETECH/肌肉科技高性能增肌乳粉</p>
+								<p>￥298</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/tianmao-mart2.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>【天猫超市】Huawei/华为Mate9</p>
+								<p>￥3699</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap" id="dis3">
+						<div class="tianmao-mart-dis">
+							<img src="img/tianmao-mart3.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>恒都巴西牛腱子1kg进口牛肉 牛腱子 牛腱</p>
+								<p>￥59,9</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/tianmao-mart4.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>正宗友臣肉松饼1.23kg福建特产小吃</p>
+								<p>￥41.4</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/tianmao-mart5.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>麦多多iphoneX手机壳透明全包超薄防摔</p>
+								<p>￥78</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/tianmao-mart6.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>椰树椰汁正宗椰树牌椰子汁 330ml*24盒/</p>
+								<p>￥298</p>
+							</div>
+						</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div class="tianmao-mart clear">
+			<div class="tianmao-mart-head clear">
+				<img src="img/tianmao-hk.png" alt="" width="214" height="25">
+				<ul class="clear">
+					<li><a href="#">口红</a></li>
+					<li><a href="#">YSL</a></li>
+					<li><a href="#">面膜</a></li>
+					<li><a href="#">防晒</a></li>
+					<li><a href="#">迪奥</a></li>
+				</ul>
+			</div>
+			<div class="tianmao-mart-content clear">
+				<div class="mart-content-wrap">
+					<div class="mart-img">
+					<img class="mart-img-top" src="img/tianmao-hk-sm.jpg" alt="" width="235" height="316">
+					<div class="tianmao-mart-ad-wrap clear">
+						<div class="mart-left-wrap">
+							<span>数码家电</span>
+						</div>
+						<div class="mart-right-wrap">
+							<span>直营品质</span>
+							<span>进口精选</span>
+						</div>
+					</div>
+					<div class="mart-more">
+						<img src="img/next-white.png" alt="next-btn" width="32" height="32">
+					</div>
+					</div>
+					<div class="mart-img">
+					<img src="img/tianmao-hk-jk.jpg" alt="" width="235" height="301"><div class="tianmao-mart-ad-wrap clear">
+						<div class="mart-left-wrap">
+							<span>进口优选</span>
+						</div>
+						<div class="mart-right-wrap">
+							<span>官方直营</span>
+							<span>直营有好货</span>
+						</div>
+					</div>
+					<div class="mart-more">
+						<img src="img/next-white.png" alt="next-btn" width="32" height="32">
+					</div>
+				</div>
+				</div>
+				
+				<div class="tianmao-mart-list clear">
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis dis1" id="dis3">
+							<div class="">
+								<p>官方直营有好货</p>
+								<p>进口优选妙物来</p>
+							</div>
+							<img src="img/hk1.jpg" alt="" width="185" height="185">
+						</div>
+				    </div>
+				    <div class="dis-wrap" id="dis3">
+						<div class="tianmao-mart-dis">
+							<img src="img/hk2.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>Gucci 古驰 光滑手机保护壳 iphone7/8</p>
+								<p>￥3614.28</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/hk3.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>台湾domecare欣兰冻膜深层清洁面膜收</p>
+								<p>￥125</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/hk4.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>COACH/蔻驰男士牛皮双肩包 上午休闲包</p>
+								<p>￥1888</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap" id="dis3">
+						<div class="tianmao-mart-dis">
+							<img src="img/hk5.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>【香港直邮】 卡西欧手表 女士钢带指针防</p>
+								<p>￥329</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/hk6.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>Adidas Yeezy 500侃爷椰子老爹鞋黑色</p>
+								<p>￥10630.79</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/hk7.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>美国Ddrops婴儿维生素D3 宝宝补钙</p>
+								<p>￥219</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/hk8.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>Goat Soap山羊奶皂手工皂婴儿儿童沐浴</p>
+								<p>￥59</p>
+							</div>
+						</div>
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div class="rx">
+			<img src="img/rx.jpg" alt="rx" width="1260" height="90">
+		</div>
+		<div class="tianmao-mart clear">
+			<div class="tianmao-mart-head clear">
+				<span>美丽人生 FASHION&BEAUTY</span>
+				<ul class="clear">
+					<li><a href="#">连衣裙</a></li>
+					<li><a href="#">T恤男</a></li>
+					<li><a href="#">美丽护肤</a></li>
+					<li><a href="#">休闲男鞋</a></li>
+					<li><a href="#">黄金项链</a></li>
+					<li><a href="#">单鞋</a></li>
+					<li><a href="#">女包</a></li>
+					<li><a href="#">文胸</a></li>
+					<li><a href="#">大牌腕表</a></li>
+				</ul>
+			</div>
+			<div class="mart-img mart-img-one">
+					<img src="img/mart-ad1.jpg" alt="" width="235" height="618">
+					<div class="tianmao-mart-ad-wrap clear">
+						<div class="mart-left-wrap">
+							<span>出游必备</span>
+						</div>
+						<div class="mart-right-wrap">
+							<span>美衣不过百</span>
+							<span>立即变美</span>
+						</div>
+					</div>
+					<div class="mart-more">
+						<img src="img/next-white.png" alt="next-btn" width="32" height="32">
+					</div>
+				</div>
+				<div class="tianmao-mart-list clear">
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis dis1" id="dis3">
+							<div class="">
+								<p>官方直营有好货</p>
+								<p>进口优选妙物来</p>
+							</div>
+							<img src="img/hk1.jpg" alt="" width="185" height="185">
+						</div>
+				    </div>
+				    <div class="dis-wrap" id="dis3">
+						<div class="tianmao-mart-dis">
+							<img src="img/ml2.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>Seagull海鸥手表男士纤薄大盘复古罗</p>
+								<p>￥669</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/ml3.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>ARMANI JEANS阿玛尼圆领纯棉T恤 2018</p>
+								<p>￥395</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/ml4.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>Dickies男鞋2018新款凉鞋软底男士露趾</p>
+								<p>￥399</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap" id="dis3">
+						<div class="tianmao-mart-dis">
+							<img src="img/ml5.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>卡帝乐鳄鱼行李箱男女学生密码拉杆箱</p>
+								<p>￥188</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/ml6.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>SHOEBOX/鞋柜夏季新款时尚水钻装饰</p>
+								<p>￥27</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/ml7.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>Crocus by gk-beck时尚部队称灰眼猫咪</p>
+								<p>￥168</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/ml8.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>【399两件】CONVERS匡威特别</p>
+								<p>￥229</p>
+							</div>
+						</div>
+				    </div>
+				</div>
+			</div>
+		<div class="tianmao-mart clear">
+			<div class="tianmao-mart-head clear">
+				<span>潮店酷玩 ELECTRONICS</span>
+				<ul class="clear">
+					<li><a href="#">手机</a></li>
+					<li><a href="#">iPhone</a></li>
+					<li><a href="#">相机</a></li>
+					<li><a href="#">数码配件</a></li>
+					<li><a href="#">影音电玩</a></li>
+					<li><a href="#">生活电器</a></li>
+					<li><a href="#">个人护理</a></li>
+					<li><a href="#">电脑配件</a></li>
+					<li><a href="#">笔记本</a></li>
+				</ul>
+			</div>
+			<div class="mart-img mart-img-one">
+					<img src="img/mart-ad2.jpg" alt="" width="235" height="618">
+					<div class="tianmao-mart-ad-wrap clear">
+						<div class="mart-left-wrap">
+							<span>魅族15</span>
+						</div>
+						<div class="mart-right-wrap">
+							<span>雕刻时光</span>
+							<span>重塑经典</span>
+						</div>
+					</div>
+					<div class="mart-more">
+						<img src="img/next-white.png" alt="next-btn" width="32" height="32">
+					</div>
+				</div>
+				<div class="tianmao-mart-list clear">
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/cd1.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>Canon/佳能EOS-1DX Mark II全画幅单反</p>
+								<p>￥34468</p>
+							</div>
+						</div>
+				    </div>
+				    <div class="dis-wrap" id="dis3">
+						<div class="tianmao-mart-dis">
+							<img src="img/cd2.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>友基pro22数位屏手绘液晶数位板手绘</p>
+								<p>￥1980</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/cd3.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>Vinci/闻奇 1.5 Pro 无线蓝牙只能耳机</p>
+								<p>￥2199</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/cd4.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>【自营】havit/海威特 193双耳无线蓝牙</p>
+								<p>￥219.9</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap" id="dis3">
+						<div class="tianmao-mart-dis">
+							<img src="img/cd5.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>PSP DD515D 播放机HDMI DVD机U盘</p>
+								<p>￥899</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/cd6.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>宾得 HD D FA645 90mm f/2.8 90 2.8</p>
+								<p>￥21999</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/cd7.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>环牛智能手环手表血压心率心电图房颤</p>
+								<p>￥1098</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/cd8.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>Newsmy纽曼移动硬盘500G笔记本移动</p>
+								<p>￥99</p>
+							</div>
+						</div>
+				    </div>
+				</div>
+			</div>
+		<div class="rx">
+			<img src="img/rx.jpg" alt="rx" width="1260" height="90">
+		</div>
+		<div class="tianmao-mart clear">
+			<div class="tianmao-mart-head clear">
+				<span>居家生活 GROCERY & HEALTH</span>
+				<ul class="clear">
+					<li><a href="#">零食</a></li>
+					<li><a href="#">牛奶</a></li>
+					<li><a href="#">居家饰品</a></li>
+					<li><a href="#">保温杯</a></li>
+					<li><a href="#">保健品</a></li>
+					<li><a href="#">常用药</a></li>
+					<li><a href="#">热门图书</a></li>
+					<li><a href="#">洗发水</a></li>
+					<li><a href="#">卫生巾</a></li>
+					<li><a href="#">家庭清洁</a></li>
+					<li><a href="#">狗粮</a></li>
+				</ul>
+			</div>
+			<div class="mart-img mart-img-one">
+					<img src="img/mart-ad3.jpg" alt="" width="235" height="618">
+					<div class="tianmao-mart-ad-wrap clear">
+						<div class="mart-left-wrap">
+							<span>大牌家居</span>
+						</div>
+						<div class="mart-right-wrap">
+							<span>领百元券</span>
+							<span>买赠好礼</span>
+						</div>
+					</div>
+					<div class="mart-more">
+						<img src="img/next-white.png" alt="next-btn" width="32" height="32">
+					</div>
+				</div>
+				<div class="tianmao-mart-list clear">
+					<div class="dis-wrap" id="">
+						<div class="tianmao-mart-dis">
+							<img src="img/sh1.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>不锈钢筷子勺子套装便携式餐具三件套装</p>
+								<p>￥5.2</p>
+							</div>
+						</div>
+				    </div>
+				    <div class="dis-wrap" id="dis3">
+						<div class="tianmao-mart-dis">
+							<img src="img/sh2.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>送醒酒器法国原瓶进口红酒路易拉菲干红</p>
+								<p>￥298</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/sh3.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>博士伦博视顿清洁105ml+舒润10ml硬</p>
+								<p>￥107</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/sh4.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>风水阁纯铜聚宝盆摆件风水招财聚财客厅</p>
+								<p>￥398</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap" id="dis3">
+						<div class="tianmao-mart-dis">
+							<img src="img/sh5.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>【买2送2赠2】国珍牌松花粉 0.5/粒</p>
+								<p>￥258</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/sh6.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>中正 紫砂功夫茶具套餐装 家用宜兴整套</p>
+								<p>￥218</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/sh7.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>费力罗巧克力礼盒装送女友心形费力罗</p>
+								<p>￥78</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/sh8.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>【港荣蒸蛋糕500g】奶香味点心蛋糕 老人</p>
+								<p>￥22.8</p>
+							</div>
+						</div>
+				    </div>
+				</div>
+			</div>
+		<!-- </div> -->
+		<div class="rx">
+			<!-- <img src="img/rx2.jpg" alt="rx" width="1260" height="90"> -->
+		</div>
+		<div class="tianmao-mart clear">
+			<div class="tianmao-mart-head clear">
+				<span>打造爱巢 HOME</span>
+				<ul class="clear">
+					<li><a href="#">家具</a></li>
+					<li><a href="#">大家电</a></li>
+					<li><a href="#">四件套</a></li>
+					<li><a href="#">健康电器</a></li>
+					<li><a href="#">厨房电器</a></li>
+					<li><a href="#">吸顶灯</a></li>
+					<li><a href="#">平板电视</a></li>
+					<li><a href="#">装修设计</a></li>
+					<li><a href="#">跑步机</a></li>
+				</ul>
+			</div>
+			<div class="mart-img mart-img-one">
+					<img src="img/mart-ad4.jpg" alt="" width="235" height="618">
+					<div class="tianmao-mart-ad-wrap clear">
+						<div class="mart-left-wrap">
+							<span>空调疯抢</span>
+						</div>
+						<div class="mart-right-wrap">
+							<span>分期免息</span>
+							<span>预约安装</span>
+						</div>
+					</div>
+					<div class="mart-more">
+						<img src="img/next-white.png" alt="next-btn" width="32" height="32">
+					</div>
+				</div>
+				<div class="tianmao-mart-list clear">
+					<div class="dis-wrap" id="">
+						<div class="tianmao-mart-dis">
+							<img src="img/ac1.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>Gree/格力 KFR-72LW/(72577)FNhA</p>
+								<p>￥17999</p>
+							</div>
+						</div>
+				    </div>
+				    <div class="dis-wrap" id="dis3">
+						<div class="tianmao-mart-dis">
+							<img src="img/ac2.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>Embody座椅 钛合金色底座|白框</p>
+								<p>￥10680</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/ac3.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>职员办公桌4/6人位简约现代办公家具电脑</p>
+								<p>￥184</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/ac4.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>荣事达RSQ-9AK多功能食材净化机果蔬机</p>
+								<p>￥5699</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap" id="dis3">
+						<div class="tianmao-mart-dis">
+							<img src="img/ac5.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>单【总部直发】老板R073+S273X</p>
+								<p>￥8980</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/ac6.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>Midea/美的 X7-321B 微波炉家用光波</p>
+								<p>￥6999</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/ac7.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>送床旗】婚庆四件套结婚大红色刺绣被套</p>
+								<p>￥968</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/ac8.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>Herman Miller Embody 座椅 标配</p>
+								<p>￥9992</p>
+							</div>
+						</div>
+				    </div>
+				</div>
+			</div>
+		<!-- </div> -->
+		<div class="rx">
+			<img src="img/rx2.jpg" alt="rx" width="1260" height="90">
+		</div>
+		<div class="tianmao-mart clear">
+			<div class="tianmao-mart-head clear">
+				<span>户外出行 OUTDOORS & AUTOMOTIVE</span>
+				<ul class="clear">
+					<li><a href="#">车秒贷</a></li>
+					<li><a href="#">皮肤衣</a></li>
+					<li><a href="#">运动鞋</a></li>
+					<li><a href="#">4S保养</a></li>
+					<li><a href="#">行车记录仪</a></li>
+					<li><a href="#">轮胎</a></li>
+				</ul>
+			</div>
+			<div class="mart-img mart-img-one">
+					<img src="img/mart-ad5.jpg" alt="" width="235" height="618">
+					<div class="tianmao-mart-ad-wrap clear">
+						<div class="mart-left-wrap">
+							<span>车品配件</span>
+						</div>
+						<div class="mart-right-wrap">
+							<span>尖货推荐</span>
+							<span>全场热抢</span>
+						</div>
+					</div>
+					<div class="mart-more">
+						<img src="img/next-white.png" alt="next-btn" width="32" height="32">
+					</div>
+				</div>
+				<div class="tianmao-mart-list clear">
+					<div class="dis-wrap" id="">
+						<div class="tianmao-mart-dis">
+							<img src="img/hw1.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>AIGLE 艾高 女士Gore-Tex防水透气</p>
+								<p>￥1990</p>
+							</div>
+						</div>
+				    </div>
+				    <div class="dis-wrap" id="dis3">
+						<div class="tianmao-mart-dis">
+							<img src="img/hw2.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>X-BIONIC跑步运动服效能男士长袖</p>
+								<p>￥2090</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/hw3.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>美国品牌 GraniteGear花岗岩</p>
+								<p>￥765</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/hw4.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>博冠乐见20-60x80观鸟镜单筒望远镜</p>
+								<p>￥1580</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap" id="dis3">
+						<div class="tianmao-mart-dis">
+							<img src="img/hw5.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>哥伦比亚2018春夏新品城市户外男裤</p>
+								<p>￥515</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/hw6.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>本汀钓鱼防晒服男士防晒衣透气户外</p>
+								<p>￥238</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/hw7.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>凯乐石KG213672户外徒步透气保暖开衫</p>
+								<p>￥269</p>
+							</div>
+						</div>
+				    </div>
+					<div class="dis-wrap">
+						<div class="tianmao-mart-dis">
+							<img src="img/hw8.jpg" alt="" width="185" height="185">
+							<div class="">
+								<p>李宁运动鞋 羽毛球鞋男鞋羽毛球训练鞋</p>
+								<p>￥88</p>
+							</div>
+						</div>
+				    </div>
+				</div>
+			</div>
+		<!-- </div> -->
+		<div class="guessFavorite">
+			<div class="favorite-head">
+				<span>———</span>
+				<i class="iconfont">&#xe65c;</i>
+				<span>猜你喜欢</span>
+				<span>———</span>
+			</div>
+			<div class="tianmao-mart clear">
+				<div class="tianmao-mart-list clear">
+					
+				</div>
+			</div>
+			<div class="end"></div>
+		</div>
+	</div><!-- main结束 -->
+	</div>
+	<div class="footerBox">
+		<div class="footer">
+		<div class="serve">
+			<div class="tianmao-serve clear">
+				<a href="#">
+					<div>
+						<p>品质保障</p>
+					    <p>品质护航 购物无忧</p>
+					</div>
+				</a>
+				<a href="#">
+					<div>
+						<p>七天无理由退换货</p>
+					    <p>为您提供售后无忧保障</p>
+					</div>
+				</a>
+				<a href="#">
+					<div>
+						<p>特色服务体验</p>
+					    <p>为您呈现不一样的服务</p>
+					</div>
+				</a>
+				<a href="#">
+					<div>
+						<p>帮助中心</p>
+					    <p>您的购物指南</p>
+					</div>
+				</a>
+			</div>
+			<div class="tianmao-desc">
+				<ul class="clear">
+					<li>
+						<a href="#">购物指南</a>
+						<ul>
+							<li><a href="#">免费注册</a></li>
+							<li><a href="#">开通支付宝</a></li>
+							<li><a href="#">支付宝充值</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">天猫保障</a>
+						<ul>
+							<li><a href="#">发票保障</a></li>
+							<li><a href="#">售后规则</a></li>
+							<li><a href="#">缺货赔付</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">支付方式</a>
+						<ul>
+							<li><a href="#">快捷支付</a></li>
+							<li><a href="#">信用卡</a></li>
+							<li><a href="#">余额宝</a></li>
+							<li><a href="#">蚂蚁花呗</a></li>
+							<li><a href="#">货到付款</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">商家服务</a>
+						<ul>
+							<li><a href="#">天猫规则</a></li>
+							<li><a href="#">商家入驻</a></li>
+							<li><a href="#">商家中心</a></li>
+							<li><a href="#">天猫智库</a></li>
+							<li><a href="#">物流服务</a></li>
+							<li><a href="#">喵言喵语</a></li>
+							<li><a href="#">运营服务</a></li>
+						</ul>
+					</li>
+					<li>
+						<a href="#">手机天猫</a>
+						<ul>
+							<li><a href="#"><img src="img/tel-tianmao.png" alt="手机天猫" width="105" height="105"></a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+	    </div>
+	    <div class="tianmao-footer">
+	    	<div class="about-tm">
+	    		<ul class="clear">
+	    			<li><a href="#">关于天猫</a></li>
+	    			<li><a href="#">帮助中心</a></li>
+	    			<li><a href="#">开放平台</a></li>
+	    			<li><a href="#">诚聘精英</a></li>
+	    			<li><a href="#">联系我们</a></li>
+	    			<li><a href="#">网站合作</a></li>
+	    			<li><a href="#">法律声明</a></li>
+	    			<li><a href="#">隐私权政策</a></li>
+	    			<li><a href="#">知识产权</a></li>
+	    			<li><a href="#">廉政举报</a></li>
+	    			<li><a href="#">规则意见征集</a></li>
+	    		</ul>
+	    	</div>
+	    	<div class="about-ali">
+	    		<ul class="clear">
+	    			<li><a href="#">阿里巴巴集团</a></li>
+	    			<li><a href="#">淘宝网</a></li>
+	    			<li><a href="#">天猫</a></li>
+	    			<li><a href="#">聚划算</a></li>
+	    			<li><a href="#">全球速卖通</a></li>
+	    			<li><a href="#">阿里巴巴国际交易市场</a></li>
+	    			<li><a href="#">1688</a></li>
+	    			<li><a href="#">阿里妈妈</a></li>
+	    			<li><a href="#">飞猪</a></li>
+	    			<li><a href="#">AliOS</a></li>
+	    			<li><a href="#">阿里通信</a></li>
+	    			<li><a href="#">万网</a></li>
+	    			<li><a href="#">高德</a></li>
+	    			<li><a href="#">UC</a></li>
+	    			<li><a href="#">友盟</a></li>
+	    			<li><a href="#">虾米</a></li>
+	    			<li><a href="#">钉钉</a></li>
+	    			<li><a href="#">支付宝</a></li>
+	    		</ul>
+	    	</div>
+	    	<div class="about-per">
+	    		<span>增值电信业务经营许可证：浙B2-20110446</span>
+	    		<span>网络文化经营许可证：浙网文[2015]0295-065号</span>
+	    		<span>12318举报</span>
+	    		<span>出版物网络交易平台服务经营备案证：新出发浙备字第001号</span>
+	    	</div>
+	    	<div class="about-inform">
+	    		<span>互联网违法和不良信息举报电话：0571-81683755 blxxjb@alibaba-inc.com</span>
+	    		<span>互联网药品信息服务资质证书编号：<a href="#">浙-（经营性）-2017-0005</a></span>
+	    		<span><i></i><a href="#">浙公网安备 33010001000120号</a></span>
+	    		<p>(浙)网械平台备字[2018]第00002号</p>
+	    	</div>
+	    	<div class="copyright">
+	    		<span>&copyright; 2003-2018 TMALL.COM版权所有</span>
+	    		<div>
+	    			<img src="img/copyright1.jpg" alt="工商"width="73" height="30">
+	    			<img src="img/copyright2.jpg" alt="许可证" width="73" height="30">
+	    		</div>
+	    	</div>
+	    </div>
+	</div><!-- footer结束 -->
+	</div>
+	
+</body>
+<script src="js/style.js"></script>
+<script>
+	var mySwiper = new Swiper('.swiper-container', {
+	    autoplay:{
+	    	disableOnInteraction: false,
+	    },
+	    effect: "fade",
+	    pagination: {
+		    el: '.swiper-pagination',
+		     clickable :true,
+		},
+    });
+</script>
+</html>
