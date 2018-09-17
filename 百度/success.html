@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>success</title>
+	<style>
+		.wrap {
+			width: 1000px;
+			height: 50px;
+			border-bottom: 1px solid #ccc;
+			margin: 0 auto;
+		}
+		.wrap a {
+			display: block;
+			text-decoration: none;
+			height: 40px;
+			width: 100px;
+			text-align: center;
+			border-radius: 5px;
+			line-height: 40px;
+			background: #14EE87;
+			color: white;
+
+		}
+		.content {
+			width: 1000px;
+			margin: 0 auto;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<a href="index.html">马上去登录</a>
+	</div>
+	<div class="content">
+		<p>以下是您的账号信息</p>
+	    <p>账号：<strong class="userName"></strong></p>
+	    <p>密码：<strong class="password"></strong></p>
+	</div>
+	
+</body>
+<script>
+	alert("恭喜您获得新账号，快快去首页登录吧");
+	getUserInfo();
+	function getUserInfo() {
+		var url = window.location.href;
+		var userName = document.querySelector(".userName");
+		var password = document.querySelector(".password");
+		var urlEncode = url.split("?")[1].split("&")[0].split("=")[1];
+		console.log(urlEncode);
+		userName.innerHTML = decodeURI(urlEncode);
+		password.innerHTML = url.split("?")[1].split("&")[2].split("=")[1];
+	}
+</script>
+</html>

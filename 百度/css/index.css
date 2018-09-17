@@ -1,0 +1,404 @@
+
+* {
+padding: 0;
+margin: 0;
+list-style: none;
+}
+html,body {
+	width: 100%;
+	height: 100%;
+}
+body {
+position: relative;
+min-height: 600px;
+min-width: 810px;
+}
+/*页头*/
+.header {
+position: absolute;
+top: 0;
+right: 0;
+padding-top: 19px;
+margin-bottom: 5px;
+}
+.header a {
+font-size: 12px;
+font-weight: bold;
+color: #333;
+}
+.ul {
+text-align: right;
+float: right;
+}
+.ul>ul>li {
+margin-left: 20px;
+text-align: center;
+float: left;
+}
+.ul ul::after {
+content: "";
+display: block;
+clear: both;
+}
+.ul ul>li a:hover {
+color: blue;
+}
+.sz {
+position: relative;
+}
+.sz ol {
+position: absolute;
+z-index: 999;
+margin-top: 5px;
+width: 65px;
+left: 50%;
+margin-left: -33px;
+background: #fff;
+border: 1px solid #ccc;
+display: none;
+}
+.sz:hover ol {
+display: block;
+}
+.sz ol li {
+width: 65px;
+padding: 2px 0;
+}
+.dl a,.sz a {
+font-weight: normal;
+}
+.sz ol a {
+text-decoration: none;
+}
+.sz ol li:hover {
+	background: blue;
+}
+.sz ol li:hover a {
+color: #fff;
+}
+.sz ol::before {
+position: absolute;
+top: -5px;
+margin-left: -5px;
+content: "";
+width: 0;
+height: 0;
+border-left: 5px solid transparent;
+border-right: 5px solid transparent;
+border-bottom: 5px solid #ccc;
+}
+.more {
+width: 70px;
+box-sizing: border-box;
+text-align: center;
+border-left: 1px solid transparent;
+background: #eee;
+}
+.more h3 {
+background: rgba(0,0,255,.6);
+font-size: 14px;
+font-weight: normal;
+color: #fff;
+padding: 3px;
+
+}
+.more ol {
+position: relative;
+display: none;
+z-index: 999;
+text-align: center;
+
+}
+.more ol li a {
+	background: url(../img/sprite.png) no-repeat 0 0;
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+}
+.more ol li:nth-of-type(1) a {
+	background-position: 0 0;
+}
+.more ol li:nth-of-type(2) a {
+	background-position: -36px 0;
+}
+.more ol li:nth-of-type(3) a {
+	background-position: -72px 0;
+}
+.more ol li:nth-of-type(4) a {
+	background-position: -112px 0;
+}
+.more ol li:nth-of-type(5) a {
+	background-position: -144px 0;
+}
+.more ol li:nth-of-type(6) a {
+	background-position: -180px 0;
+}
+.more ol li {
+border-top: 1px solid #ccc;
+padding-top: 10px;
+padding-bottom: 10px;
+font-size: 12px;
+color: #999;
+}
+.more:hover ol {
+display: block;
+}
+.more:hover h3{
+background: #fff;
+color: #666;
+}
+.more:hover {
+border-left: 1px solid #ccc;
+}
+/*登录*/
+.register {
+position: absolute;
+top: 70px;
+left: 50%;
+margin-left: -225px;
+width: 350px;
+height: 450px;
+background: #fff;
+text-align: center;
+display: none;
+z-index: 2;
+}
+.rgMove {
+width: 350px;
+height: 24px;
+position: absolute;
+cursor: move;
+}
+.reClose a{
+position: absolute;
+right: 0;
+width: 40px;
+height: 40px;
+line-height: 40px;
+text-align: center;
+text-decoration: none;
+font-size: 40px;
+color: #ccc;
+border-radius: 50%;
+float: right;
+}
+.rgLogo span {
+display: inline-block;
+position: relative;
+top: -10px;
+}
+.qrCode {
+margin-top: 20px;	
+}
+.qrCode img {
+border: 1px solid #ccc;
+padding: 10px;
+}
+.register p a{
+color: blue;
+}
+.register p {
+margin-top: 20px;
+}
+.rgDis {
+margin-top: 20px;
+}
+.rgDis span {
+width: 100%;
+margin-right: 30px;
+}
+.rgDis img {
+vertical-align: middle;
+margin-right: 5px;
+}
+.rgName {
+position: absolute;
+width: 100%;
+height: 60px;
+background: rgba(0,255,0,.1);
+bottom: 0;
+line-height: 60px;
+}
+.rgName a:nth-of-type(1) {
+display: inline-block;
+width: 80px;
+height: 16px;
+}
+.rgName a:nth-of-type(2) {
+display: inline-block;
+width: 200px;
+text-align: right;
+}
+.rgName img {
+vertical-align: middle;
+}
+.rgName span:nth-of-type(1) img{
+border-left: 1px solid #ccc;
+padding-left: 5px;
+}
+/*logo*/
+.logoBox {
+	position: relative;
+	top: 48px;
+	/*height: 191px;*/
+}
+.logo {
+text-align: center;
+}
+.ul::after {
+content: "";
+display: block;
+clear: both;
+}
+.form {
+position: absolute;
+padding-top: 22px;
+left: 50%;
+margin-left: -330px;
+width: 659px;
+/*margin: 0 auto;*/
+}
+.form span {
+position: relative;
+}
+.form img {
+position: absolute;
+right: 10px;
+top: 3px;
+}
+.form input[type="text"] {
+width: 515px;
+height: 34px;
+font-size: 18px;
+padding-right: 40px;
+}
+.form input {
+float: left;
+}
+.form input[type="submit"] {
+width: 100px;
+height: 38px;
+border: 0;
+font-size: 16px;
+background: #4646F0;
+color: #fff;
+text-align: center;
+line-height: 35px;
+}
+/*页尾*/
+.footer {
+position: absolute;
+bottom: 50px;
+left: 50%;
+margin-left: -300px;
+text-align: center;
+width: 600px;
+font-size: 12px;
+color: #666;
+clear: both;
+}
+.footer a{
+color: #666;
+}
+.footerUl {
+margin-top: 20px;
+}
+.footerUl a{
+margin-left: 30px;
+}
+.copyRight {
+margin-top: 5px;
+}
+.footerTitle {
+margin-top: 5px;
+}
+.wrapbg {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background: rgba(0,0,0,.4);
+z-index: 1;
+display: none;
+}
+
+.userLogin input[type="text"],.userLogin input[type="password"] {
+width: 284px;
+height: 20px;
+padding: 10px;
+margin-top: 20px;
+}
+.userLogin input[type="text"] {
+margin-top: 0px;
+}
+/*.userLogin input[type="checkbox"] {
+float: left;
+}*/
+label {
+text-align: center;
+float: left;
+margin-left: 23px;
+margin-top: 20px;
+font-size: 14px;
+color: #665;
+}
+.userLogin input[type="submit"] {
+width: 304px;
+height: 40px;
+background: #2D66E8;
+color: #fff;
+line-height: 40px;
+text-align: center;
+border: 0;
+font-size: 18px;
+font-weight: bold;
+margin-top: 10px;
+}
+.userLogin span:nth-of-type(1) {
+display: inline-block;
+margin-top: 10px;
+width: 152px;
+text-align: left;
+}
+.userLogin span:nth-of-type(2) {
+display: inline-block;
+text-align: right;
+margin-top: 10px;
+width: 152px;
+margin-bottom: 33px;
+}
+#userLogin-check {
+width: 120px;
+height: 20px;
+margin-left: 20px;
+}
+#userLogin-security {
+width: 80px;
+height: 20px;
+margin-left: 10px;
+background: url(img/security1.png);
+background-size: 100px 40px;
+border: 1px solid #ccc;
+}
+#userLogin-span {
+color: blue;
+width: 40px;
+margin-left: 10px;
+font-size: 12px;
+cursor: pointer;
+}
+.userLogin-input {
+margin-top: 5px;
+text-align: left;
+}
+.metion {
+color: red;
+width: 310px;
+height: 16px;
+margin: 0 auto;
+text-align: left;
+/*background: #ccc;*/
+font-weight: normal;
+font-size: 12px;
+}
