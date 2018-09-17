@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>照片墙</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .wrap {
+            width: 300px;
+            margin: 150px auto;
+        }
+        ul {
+            width: 100px;
+            height: 100px;
+            position: relative;
+            transform-style: preserve-3d;
+            animation: move 10s linear infinite;
+        }
+        ul:hover {
+            animation-play-state: paused;
+        }
+        ul:hover li img {
+            opacity: .5;
+        }
+        ul li:hover img {
+            opacity: 1;
+        }
+        li {
+            position: absolute;
+            list-style: none;
+             
+            background: #000; 
+        }
+        img {
+            width: 150px;
+            height: 150px;
+        }
+        ul li:nth-of-type(1) {
+            transform: rotateY(45deg) translateZ(-200px);
+        }
+        ul li:nth-of-type(2) {
+            transform:rotateY(90deg)  translateZ(-200px) ;
+        }
+        ul li:nth-of-type(3) {
+            transform: rotateY(135deg) translateZ(-200px) ;
+        }
+        ul li:nth-of-type(4) {
+            transform: rotateY(180deg) translateZ(-200px) ;
+        }
+        ul li:nth-of-type(5) {
+            transform: rotateY(225deg) translateZ(-200px) ;
+        }
+        ul li:nth-of-type(6) {
+            transform: rotateY(270deg) translateZ(-200px) ;
+        }
+        ul li:nth-of-type(7) {
+            transform: rotateY(315deg) translateZ(-200px) ;
+        }
+        ul li:nth-of-type(8) {
+            transform: rotateY(360deg) translateZ(-200px) ;
+        }
+        @keyframes move {
+            from {
+                transform: rotateX(-10deg)  rotateY(0deg);
+            }
+            to {
+                transform: rotateX(-10deg) rotateY(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="wrap">
+      <ul>
+          <li><img src="img/music1.jpg" alt=""></li>
+          <li><img src="img/music2.jpg" alt=""></li>
+          <li><img src="img/music3.jpg" alt=""></li>
+          <li><img src="img/music4.jpg" alt=""></li>
+          <li><img src="img/music5.jpg" alt=""></li>
+          <li><img src="img/music6.jpg" alt=""></li>
+          <li><img src="img/music3.jpg" alt=""></li>
+          <li><img src="img/music7.jpg" alt=""></li>
+      </ul>
+   </div>
+</body>
+<script>
+  
+</script>
+</html>
