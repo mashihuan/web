@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>waterfall</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .wrap {
+            width: 1000px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        ul {
+            float: left;
+            width: 200px;
+        }
+        ul li {
+            list-style: none;
+            width: 200px;
+            border: 1px solid #000;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <ul></ul>
+        <ul></ul>
+        <ul></ul>
+        <ul></ul>
+        <ul></ul>
+    </div>
+</body>
+<script>
+    var wrap = document.getElementsByClassName('wrap')[0];
+    var ul = document.getElementsByTagName('ul');
+    var num = 30;
+    init();
+    createLi();
+    function createLi() {
+        for(var i=0; i<num; i++) {
+            var li = document.createElement("li");
+            li.innerHTML = i;
+            li.style.height = getRandomHeight(100,200) + "px";
+            var ul = minHeight();
+            ul.appendChild(li);
+            ul.currentHeight += li.offsetHeight;
+        }
+    }
+    function getRandomHeight(min,max) {
+        return parseInt(Math.random() * (max - min) + min);
+    }
+    function init() {
+        for(var i=0; i<ul.length; i++) {
+            ul[i].currentHeight = 0;
+        }
+    }
+    function minHeight() {
+        var minUl = ul[0];
+        for(var i=1; i<ul.length; i++) {
+            if(ul[i].currentHeight < minUl.currentHeight) {
+                minUl = ul[i];
+            }
+        }
+        return minUl;
+    }
+</script>
+</html>
