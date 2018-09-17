@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+        .small {
+            width: 300px;
+            height: 300px;
+            position: relative;
+        }
+        .mask {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            top: 0;
+            left: 0;
+            background: yellow;
+            opacity: .5;
+            display: none;
+        }
+       .big {
+           position: absolute;
+           left: 320px;
+           top: 8px;
+           width: 300px;
+           height: 300px;
+           overflow: hidden;
+           display: none;
+           border: 1px solid red;
+       }
+       .big img {
+           position: absolute;
+       }
+    </style>
+</head>
+<body>
+
+    <div class="small">
+        <img src="img/small.png" alt="">
+        <div class="mask"></div>
+    </div>
+    <div class="big">
+        <img src="img/big.png" alt="">
+    </div>
+<script>
+    // 蒙版和大图的显示隐藏
+    $(".small").hover(function(){
+        $(".mask").show();
+        $(".big").show();
+    },function(){
+        $(".mask").hide();
+        $(".big").hide();
+    });
+    // 绑定鼠标按下事件
+    $(".mask").on("mousedown",function(e){
+        var ev = e || window.event;
+        // 绑定鼠标移动事件
+        $(document).on("mousemove",function(e){
+            var ev = e || window.event;
+            var currentX = ev.clientX;
+            var currentY = ev.clientY;
+            var myLeft = currentX-$(".mask").width()/2  - $(".small").offset().left;
+            var myTop = currentY-$(".mask").height()/2  - $(".small").offset().top;
+            // 碰撞检测
+            if(myLeft <= 0) {
+                myLeft = 0;
+            }
+            if(myLeft >= $(".small").width() - $(".mask").width()) {
+                myLeft = $(".small").width() - $(".mask").width();
+            }
+            if(myTop <= 0) {
+                myTop = 0;
+            }
+            if(myTop >= $(".small").height() - $(".mask").height()) {
+                myTop = $(".small").height() - $(".mask").height();
+            }
+            $(".mask").css({
+                left: myLeft,
+                top: myTop
+            })
+            // 计算图片可移动区域
+            var x = myLeft/($(".small").width()-$(".mask").width())*($(".big img").width()-$(".big").width());
+            var y = myTop/($(".small").height()-$(".mask").height())*($(".big img").height()-$(".big").height());
+            $(".big img").css({
+                left: -x,
+                top: -y 
+            })
+            return false;
+        });
+        // 绑定鼠标抬起事件
+        $(document).on("mouseup",function(){
+            $(document).off("mousemove");
+        })
+    })
+</script>
+</body>
+</html>
