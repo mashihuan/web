@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>practice</title>
+    <script src="http://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        .wrap {
+            width: 500px;
+            margin: 30px auto;
+            perspective: 800px;
+        }
+        .dis {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto;
+            background: linear-gradient(red,blue,green);
+            border-radius: 10px;
+        }
+        input {
+            width: 500px;
+        }
+        p {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="dis"></div>
+        <div class="box">
+             <p>RotateX: <span class="value1">0</span>deg</p>
+              <input type="range" class="range1" min="-360" max="360">
+        </div>
+        <div class="box">
+             <p>RotateY: <span class="value2">0</span>deg</p>
+            <input type="range" class="range2" min="-360" max="360">
+        </div>
+        <div class="box">
+            <p>RotateZ: <span class="value3">0</span>deg</p>
+            <input type="range" class="range3" min="-360" max="360">
+        </div>
+        
+    </div>
+</body>
+<script>
+    animation();
+    function animation() {
+        $("input").each(function(){
+            $(this).on("input",function(){
+                $(".dis").css("transform","rotateX("+$(".range1").val()+'deg'+") rotateY("+$(".range2").val()+'deg'+") rotateZ("+$(".range3").val()+'deg'+")");
+                $(this).parents(".box").find("span").html($(this).val());
+            })
+
+        })
+    }
+</script>
+</html>
