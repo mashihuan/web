@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>calendar</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        body {
+            background: #F2F0A6;
+        }
+        .wrap {
+            position: relative;
+            width: 500px;
+            height: 260px;
+            margin: 50px auto;
+            text-align: center;
+            background: #fff;
+        }
+        a {
+            position: absolute;
+            text-decoration: none;
+            top: 15px;
+        }
+        a:nth-of-type(1) {
+            left: 20px;
+        }
+        a:nth-of-type(2) {
+            right: 20px;
+        }
+        .day,.week {
+            overflow: hidden;
+        }
+        .week li {
+            list-style: none;
+            float: left;
+            width: 70px;
+            text-align: center;
+        }
+        .day {
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .day li {
+            float: left;
+            list-style: none;
+            width: 70px;
+            height: 30px;
+            line-height: 30px;
+        }
+        .day li:hover {
+            background-color: rgba(0,0,0,.1);
+        }
+        .day .active {
+            background: red !important;
+            color: #fff;
+        }
+        .day .gray {
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <h3 class="month"></h3>
+        <p class="year"></p>
+        <a class="prev" href="#">&lt;</a>
+        <a class="next" href="#">&gt;</a>
+        <hr>
+        <ul class="week">
+            <li>MON</li>
+            <li>TUE</li>
+            <li>WEN</li>
+            <li>THU</li>
+            <li>FRI</li>
+            <li>SAT</li>
+            <li>SUN</li>
+        </ul>
+        <ul class="day">
+            
+        </ul>
+    </div>
+</body>
+<script>
+    var myDay = document.querySelector(".day");
+    var year = document.querySelector(".year");
+    var prev = document.querySelector(".prev");
+    var next = document.querySelector(".next");
+    var month = document.querySelector(".month");
+    var arrMonth = ["Janurary","Feburay","March","April",
+                    "May","June","July","August","September","October","November","December"];
+    var arrMonth1 = [31,28,31,30,31,30,31,31,30,31,30,31];
+    var arrMonth2 = [31,29,31,30,31,30,31,31,30,31,30,31];
+    var date = new Date();
+    var currentMonth = date.getMonth();
+    var currentYear = date.getFullYear();
+    var currentDate = date.getDate();
+    prev.onclick = function() {
+        currentMonth --;
+        if(currentMonth < 0) {
+            currentMonth = 11;
+            currentYear --;
+        }
+        console.log(currentMonth);
+        setTitleInfo();
+        createLi();
+    };
+    next.onclick = function() {
+        currentMonth ++;
+        if(currentMonth > 11) {
+            currentMonth = 0;
+            currentYear ++;
+        }
+        setTitleInfo();
+        createLi();
+    }
+    createLi();
+    setTitleInfo();
+    // 动态创建li
+    function createLi() {
+        myDay.innerHTML = "";
+        createEmpty();
+        for(var i=1; i<getDaysOfMonth()+1; i++) {
+            var li = document.createElement("li");
+            li.innerHTML = i;
+            if(i == currentDate && currentMonth == date.getMonth() && currentYear == date.getFullYear()) {
+                li.className = "active";
+            }
+            if(currentYear == date.getFullYear() && currentMonth == date.getMonth()&& i < currentDate ||currentYear==date.getFullYear()&& currentMonth < date.getMonth() || currentYear < date.getFullYear()) {
+                li.className = "gray";
+            }
+            myDay.appendChild(li);
+            
+        }   
+    }
+    // 设置年和月
+    function setTitleInfo() {
+        year.innerHTML = currentYear;
+        month.innerHTML = arrMonth[currentMonth];
+    }
+    // 创建空的li
+    function createEmpty() {
+        for(var i=0; i<weekOfFirstDay()-1; i++) {
+            var li = document.createElement("li");
+            li.innerHTML = "";
+            myDay.appendChild(li);
+        }
+    }
+    // 获取每月有几天
+    function getDaysOfMonth() {
+        // 判断闰年平年
+        if(currentYear % 4 == 0 && currentYear % 100 != 0 || currentYear % 400 == 0) {
+            return arrMonth1[currentMonth];
+        }else {
+            return arrMonth2[currentMonth];
+        }
+        
+    }
+    // 获取每月的第一天星期几
+    function weekOfFirstDay() {
+        var curMonth = currentMonth + 1;
+        var d = new Date(""+curMonth+" 1 "+currentYear+"");
+        return d.getDay();
+    }
+
+</script>
+</html>
